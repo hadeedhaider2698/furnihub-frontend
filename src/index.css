@@ -1,32 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-sans bg-surface text-text-primary antialiased;
+  :root {
+    --primary: #1A1A2E;
+    --accent: #E8A87C;
+    --accent-2: #C75B39;
+    --surface: #F8F6F0;
+    --surface-2: #FFFFFF;
+    --text-primary: #1A1A2E;
+    --text-secondary: #6B7280;
+    --border: #E5E0D8;
+    --success: #22C55E;
+    --error: #EF4444;
+    --warning: #F59E0B;
   }
-  
+
+  body {
+    @apply bg-[var(--surface)] text-[var(--text-primary)] font-sans antialiased;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-primary;
+    @apply font-serif text-[var(--primary)];
+  }
+
+  /* Hide scrollbar for clean UI like Instagram */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
 @layer components {
-  /* Common UI components can go here or be Tailwind abstractions */
   .btn-primary {
-    @apply bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all shadow-warm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply bg-[var(--primary)] text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition shadow-sm active:scale-95;
   }
-  
   .btn-accent {
-    @apply bg-accent text-white px-6 py-2 rounded-full hover:bg-accent-2 transition-all shadow-warm focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+    @apply bg-[var(--accent)] text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition shadow-sm active:scale-95;
   }
-
   .btn-outline {
-    @apply border border-border bg-transparent text-primary px-6 py-2 rounded-full hover:bg-surface-2 transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply border border-[var(--border)] text-[var(--primary)] px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition active:scale-95 bg-white;
   }
-
-  .card {
-    @apply bg-surface-2 rounded-lg shadow-warm border border-border;
+  .input-field {
+    @apply w-full border border-[var(--border)] rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-[var(--accent)] transition;
   }
 }

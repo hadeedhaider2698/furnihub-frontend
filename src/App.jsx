@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast'
 import MainLayout from './components/layout/MainLayout.jsx'
 import DashboardLayout from './components/layout/DashboardLayout.jsx'
 import Home from './pages/customer/Home.jsx'
-import Shop from './pages/customer/Shop.jsx'
+import Explore from './pages/customer/Explore.jsx'
 import ProductDetail from './pages/customer/ProductDetail.jsx'
 import CartPage from './pages/customer/CartPage.jsx'
 import Checkout from './pages/customer/Checkout.jsx'
@@ -11,6 +11,7 @@ import Orders from './pages/customer/Orders.jsx'
 import Login from './pages/auth/Login.jsx'
 import Register from './pages/auth/Register.jsx'
 import VendorDashboard from './pages/vendor/VendorDashboard.jsx'
+import VendorProfile from './pages/vendor/VendorProfile.jsx'
 import AdminDashboard from './pages/admin/AdminDashboard.jsx'
 
 export default function App() {
@@ -20,9 +21,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="products" element={<Shop />} />
+          <Route path="explore" element={<Explore />} />
           <Route path="products/:slug" element={<ProductDetail />} />
-          <Route path="category/:categoryName" element={<Shop />} />
+          <Route path="vendor/:id" element={<VendorProfile />} />
+          <Route path="category/:categoryName" element={<Explore />} />
           <Route path="cart" element={<CartPage />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="orders" element={<Orders />} />

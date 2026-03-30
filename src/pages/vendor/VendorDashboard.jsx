@@ -1,8 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet-async';
-import { DollarSign, Package, ShoppingCart, TrendingUp } from 'lucide-react';
+import { DollarSign, Package, ShoppingCart, TrendingUp, Plus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api.js';
 import { FullPageLoader } from '../../components/ui/Loader.jsx';
+import { motion } from 'framer-motion';
 
 const fetchVendorStats = async () => {
   const res = await api.get('/vendors/stats');
@@ -18,62 +20,59 @@ export default function VendorDashboard() {
   if (isLoading) return <FullPageLoader />;
 
   return (
-    <div>
-      <Helmet><title>Vendor Dashboard | FurniHub</title></Helmet>
+    <div className="lg:pr-8">
+      <Helmet><title>Vendor Portal | FurniHub</title></Helmet>
       
-      <div className="flex justify-between items-end mb-8">
+      <div className="flex justify-between items-end mb-10">
         <div>
-          <h1 className="text-3xl font-serif font-bold text-primary">Overview</h1>
-          <p className="text-text-secondary mt-1">Here's what's happening with your store today.</p>
+          <h1 className="text-3xl font-sans font-bold text-[var(--primary)]">Store Overview</h1>
+          <p className="text-[var(--text-secondary)] mt-1">Professional business analytics for your boutique.</p>
         </div>
+        <Link to="/vendor/products/new" className="bg-[var(--primary)] text-white px-5 py-2.5 rounded-lg text-sm font-bold flex items-center shadow-md active:scale-95 transition">
+          <Plus size={18} className="mr-2" /> Add Product
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <div className="bg-surface-2 p-6 rounded-xl border border-border flex items-center shadow-sm">
-          <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4">
-            <DollarSign size={24} />
+        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="bg-white p-6 rounded-xl border border-[var(--border)] shadow-sm">
+          <div className="flex items-center justify-between mb-4">
+            <p className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider">Gross Revenue</p>
+            <div className="p-2 bg-green-50 rounded-md text-green-600"><DollarSign size={18} /></div>
           </div>
-          <div>
-            <p className="text-sm font-medium text-text-secondary">Total Revenue</p>
-            <p className="text-2xl font-bold text-primary">${stats?.totalRevenue || 0}</p>
-          </div>
-        </div>
+          <p className="text-3xl font-serif text-[var(--primary)]">${stats?.totalRevenue || 0}</p>
+        </motion.div>
 
-        <div className="bg-surface-2 p-6 rounded-xl border border-border flex items-center shadow-sm">
-          <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4">
-            <ShoppingCart size={24} />
+        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="bg-white p-6 rounded-xl border border-[var(--border)] shadow-sm">
+           <div className="flex items-center justify-between mb-4">
+            <p className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider">Orders</p>
+            <div className="p-2 bg-blue-50 rounded-md text-blue-600"><ShoppingCart size={18} /></div>
           </div>
-          <div>
-            <p className="text-sm font-medium text-text-secondary">Total Orders</p>
-            <p className="text-2xl font-bold text-primary">{stats?.totalOrders || 0}</p>
-          </div>
-        </div>
+          <p className="text-3xl font-serif text-[var(--primary)]">{stats?.totalOrders || 0}</p>
+        </motion.div>
 
-        <div className="bg-surface-2 p-6 rounded-xl border border-border flex items-center shadow-sm">
-          <div className="h-12 w-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 mr-4">
-            <Package size={24} />
+        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="bg-white p-6 rounded-xl border border-[var(--border)] shadow-sm">
+           <div className="flex items-center justify-between mb-4">
+            <p className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider">Units Sold</p>
+            <div className="p-2 bg-amber-50 rounded-md text-amber-600"><Package size={18} /></div>
           </div>
-          <div>
-            <p className="text-sm font-medium text-text-secondary">Products Sold</p>
-            <p className="text-2xl font-bold text-primary">{stats?.totalProductsSold || 0}</p>
-          </div>
-        </div>
+          <p className="text-3xl font-serif text-[var(--primary)]">{stats?.totalProductsSold || 0}</p>
+        </motion.div>
         
-        <div className="bg-surface-2 p-6 rounded-xl border border-border flex items-center shadow-sm">
-          <div className="h-12 w-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-600 mr-4">
-            <TrendingUp size={24} />
+        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }} className="bg-white p-6 rounded-xl border border-[var(--border)] shadow-sm">
+           <div className="flex items-center justify-between mb-4">
+            <p className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider">Avg Order Value</p>
+            <div className="p-2 bg-purple-50 rounded-md text-purple-600"><TrendingUp size={18} /></div>
           </div>
-          <div>
-            <p className="text-sm font-medium text-text-secondary">Avg. Order Value</p>
-            <p className="text-2xl font-bold text-primary">
-              ${stats?.totalOrders > 0 ? (stats.totalRevenue / stats.totalOrders).toFixed(2) : 0}
-            </p>
-          </div>
-        </div>
+          <p className="text-3xl font-serif text-[var(--primary)]">
+            ${stats?.totalOrders > 0 ? (stats.totalRevenue / stats.totalOrders).toFixed(2) : 0}
+          </p>
+        </motion.div>
       </div>
       
-      <div className="bg-surface-2 border border-border rounded-xl p-8 text-center text-text-secondary">
-        Chart visualization placeholder. Integrate Recharts here for trend lines.
+      <div className="bg-white border border-[var(--border)] rounded-xl p-8 text-center text-[var(--text-secondary)] shadow-sm flex flex-col items-center justify-center min-h-[300px]">
+        <Activity size={48} className="mb-4 opacity-20" />
+        <p className="font-medium text-[var(--primary)] mb-1">No Revenue Data Yet</p>
+        <p className="text-sm max-w-sm">Share your products on social media to generate your first sales and activate the trends graph.</p>
       </div>
     </div>
   );

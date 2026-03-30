@@ -7,28 +7,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1A1A2E',
-        accent: '#E8A87C',
-        'accent-2': '#C75B39',
-        surface: '#F8F6F0',
-        'surface-2': '#FFFFFF',
-        'text-primary': '#1A1A2E',
-        'text-secondary': '#6B7280',
-        border: '#E5E0D8',
-        success: '#22C55E',
-        error: '#EF4444',
-        warning: '#F59E0B',
+        primary: 'var(--primary)',
+        accent: 'var(--accent)',
+        'accent-2': 'var(--accent-2)',
+        surface: 'var(--surface)',
+        'surface-2': 'var(--surface-2)',
+        'text-primary': 'var(--text-primary)',
+        'text-secondary': 'var(--text-secondary)',
+        border: 'var(--border)',
+        success: 'var(--success)',
+        error: 'var(--error)',
+        warning: 'var(--warning)',
       },
       fontFamily: {
         sans: ['"DM Sans"', 'sans-serif'],
         serif: ['"Playfair Display"', 'serif'],
       },
-      spacing: {
-        '18': '4.5rem',
-      },
       boxShadow: {
-        'warm': '0 4px 20px -2px rgba(232, 168, 124, 0.1)',
-        'warm-lg': '0 10px 25px -5px rgba(232, 168, 124, 0.15)',
+        'warm': '0 4px 20px -2px rgba(26, 26, 46, 0.05)',
       }
     },
   },
