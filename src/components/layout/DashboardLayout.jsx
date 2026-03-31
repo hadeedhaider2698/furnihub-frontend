@@ -32,7 +32,7 @@ export default function DashboardLayout({ expectedRole }) {
       <aside className="w-full md:w-64 bg-surface-2 border-r border-border p-6 flex flex-col h-auto md:h-[calc(100vh-80px)] sticky top-20">
         <div className="mb-8">
           <h2 className="text-xl font-serif font-bold text-primary capitalize">{user.role} Portal</h2>
-          <p className="text-sm text-text-secondary">Welcome back, {user.name.split(' ')[0]}</p>
+          <p className="text-sm text-text-secondary">Welcome back, {user?.name?.split(' ')[0] || user?.email || 'User'}</p>
         </div>
         
         <nav className="flex-1 space-y-2">

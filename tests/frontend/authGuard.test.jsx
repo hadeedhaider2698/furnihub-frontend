@@ -19,6 +19,7 @@ describe('Auth Guards', () => {
           <Route path="dashboard" element={<div>Vendor Dashboard Allowed</div>} />
         </Route>
         <Route path="/" element={<div>Home Redirect</div>} />
+        <Route path="/auth/login" element={<div>Login Page</div>} />
       </Routes>
     </MemoryRouter>
   );
@@ -26,7 +27,7 @@ describe('Auth Guards', () => {
   it('/vendor/* routes redirect to / if authenticated as customer', () => {
     // Set user as Customer
     useAuthStore.setState({
-      user: { role: 'customer' },
+      user: { role: 'customer', name: 'John Doe' },
       isAuthenticated: true
     });
 
@@ -39,7 +40,7 @@ describe('Auth Guards', () => {
 
   it('/vendor/* routes render for vendors perfectly', () => {
     useAuthStore.setState({
-      user: { role: 'vendor' },
+      user: { role: 'vendor', name: 'John Doe' },
       isAuthenticated: true
     });
 
@@ -49,14 +50,14 @@ describe('Auth Guards', () => {
     expect(screen.queryByText('Home Redirect')).toBeNull();
   });
 
-  it('/vendor/* routes redirect to /login (or /) if not authenticated', () => {
+  it('/vendor/* routes redirect to /auth/login if not authenticated', () => {
     // Completely unauthenticated
     useAuthStore.setState({ user: null, isAuthenticated: false });
 
     render(<TestRouter role="vendor" initialRoute="/vendor/dashboard" />);
     
-    // Redirects inherently
-    expect(screen.getByText('Home Redirect')).toBeInTheDocument();
+    // Redirects inherently to /auth/login as per DashboardLayout.jsx
+    expect(screen.getByText('Login Page')).toBeInTheDocument();
     expect(screen.queryByText('Vendor Dashboard Allowed')).toBeNull();
   });
 });

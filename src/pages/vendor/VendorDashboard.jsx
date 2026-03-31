@@ -69,10 +69,37 @@ export default function VendorDashboard() {
         </motion.div>
       </div>
       
-      <div className="bg-white border border-[var(--border)] rounded-xl p-8 text-center text-[var(--text-secondary)] shadow-sm flex flex-col items-center justify-center min-h-[300px]">
-        <Activity size={48} className="mb-4 opacity-20" />
-        <p className="font-medium text-[var(--primary)] mb-1">No Revenue Data Yet</p>
-        <p className="text-sm max-w-sm">Share your products on social media to generate your first sales and activate the trends graph.</p>
+      <div className="bg-white border border-[var(--border)] rounded-xl shadow-sm overflow-hidden">
+        <div className="p-6 border-b border-[var(--border)] flex justify-between items-center">
+          <h2 className="font-bold text-[var(--primary)]">Recent Orders</h2>
+          <div className="flex space-x-2">
+            {['All', 'Pending', 'Processing', 'Shipped', 'Delivered'].map(status => (
+              <button key={status} className="px-3 py-1 text-xs font-medium rounded-full border border-[var(--border)] hover:bg-[var(--surface)] transition">
+                {status}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm text-left">
+            <thead className="bg-[var(--surface)] text-[var(--text-secondary)] uppercase text-[10px] tracking-wider">
+              <tr>
+                <th className="px-6 py-4 font-bold">Order ID</th>
+                <th className="px-6 py-4 font-bold">Customer</th>
+                <th className="px-6 py-4 font-bold">Amount</th>
+                <th className="px-6 py-4 font-bold">Status</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[var(--border)]">
+              <tr className="hover:bg-[var(--surface)] transition-colors">
+                <td className="px-6 py-4 font-medium">#ORD-001</td>
+                <td className="px-6 py-4">John Doe</td>
+                <td className="px-6 py-4 font-bold">$150.00</td>
+                <td className="px-6 py-4 text-amber-600 font-bold uppercase text-[10px]">Pending</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

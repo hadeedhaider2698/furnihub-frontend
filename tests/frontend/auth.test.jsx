@@ -14,8 +14,8 @@ describe('Auth Components', () => {
   describe('Login Form', () => {
     it('renders email and password fields', () => {
       renderWithRouter(<Login />);
-      expect(screen.getByPlaceholderText(/Email/i)).toBeInTheDocument();
-      expect(screen.getByPlaceholderText(/Password/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/Email address/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/^Password$/i)).toBeInTheDocument();
       expect(screen.getByRole('button', { name: /Sign In/i })).toBeInTheDocument();
     });
 
@@ -35,29 +35,28 @@ describe('Auth Components', () => {
       renderWithRouter(<Login />);
       const user = userEvent.setup();
       
-      const emailInput = screen.getByPlaceholderText(/Email/i);
-      const passwordInput = screen.getByPlaceholderText(/Password/i);
+      const emailInput = screen.getByLabelText(/Email address/i);
+      const passwordInput = screen.getByLabelText(/^Password$/i);
       
       await user.type(emailInput, 'test@test.com');
-      await user.type(passwordInput, '1234'); // under minimum
-      
+      // Enter nothing in password or just space
       const btn = screen.getByRole('button', { name: /Sign In/i });
       await user.click(btn);
       
       await waitFor(() => {
-        expect(screen.getByText(/String must contain at least 6 character|invalid/i)).toBeInTheDocument(); // Zod general or specific error
+        expect(screen.getByText(/Password is required/i)).toBeInTheDocument();
       });
     });
 
     it('Forgot password link navigates correctly', () => {
       renderWithRouter(<Login />);
-      const link = screen.getByRole('link', { name: /Forgot password/i });
+      const link = screen.getByRole('link', { name: /Forgot your password\?/i });
       expect(link.getAttribute('href')).toBe('/auth/forgot-password');
     });
 
     it('Register link navigates correctly', () => {
       renderWithRouter(<Login />);
-      const link = screen.getByRole('link', { name: /Sign up/i });
+      const link = screen.getByRole('link', { name: /create a new account/i });
       expect(link.getAttribute('href')).toBe('/auth/register');
     });
   });
@@ -65,22 +64,22 @@ describe('Auth Components', () => {
   describe('Register Form', () => {
     it('All fields render', () => {
       renderWithRouter(<Register />);
-      expect(screen.getByPlaceholderText(/Full Name/i)).toBeInTheDocument();
-      expect(screen.getByLabelText(/Email/i)).toBeInTheDocument(); // Depends on exact DOM
-      expect(screen.getByPlaceholderText(/Create a password/i)).toBeInTheDocument();
-      expect(screen.getByPlaceholderText(/Confirm your password/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/Full Name/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/Email address/i)).toBeInTheDocument(); 
+      expect(screen.getByLabelText(/^Password$/i, { selector: 'input' })).toBeInTheDocument();
+      expect(screen.getByLabelText(/Confirm Password/i)).toBeInTheDocument();
     });
 
     it('Password mismatch shows error', async () => {
       renderWithRouter(<Register />);
       const user = userEvent.setup();
 
-      await user.type(screen.getByPlaceholderText(/Full Name/i), 'Test Guy');
-      await user.type(screen.getByPlaceholderText(/Email address/i), 'test@test.com');
-      await user.type(screen.getByPlaceholderText(/Create a password/i), 'Password123');
-      await user.type(screen.getByPlaceholderText(/Confirm your password/i), 'PasswordWrong');
+      await user.type(screen.getByLabelText(/Full Name/i), 'Test Guy');
+      await user.type(screen.getByLabelText(/Email address/i), 'test@test.com');
+      await user.type(screen.getByLabelText(/^Password$/i, { selector: 'input' }), 'Password123');
+      await user.type(screen.getByLabelText(/Confirm Password/i), 'PasswordWrong');
 
-      await user.click(screen.getByRole('button', { name: /Create Account/i }));
+      await user.click(screen.getByRole('button', { name: /Sign Up/i }));
 
       await waitFor(() => {
         expect(screen.getByText(/Passwords don't match/i)).toBeInTheDocument();

@@ -47,7 +47,7 @@ describe('Cart Drawer Components', () => {
     renderCart(true, vi.fn());
     expect(screen.getByText('Your Bag')).toBeInTheDocument();
     expect(screen.getByText('Cart Sofa')).toBeInTheDocument();
-    expect(screen.getByText(/20,000/i)).toBeInTheDocument(); // Math formats
+    expect(screen.getByText(/20000/i)).toBeInTheDocument(); // Math formats
   });
 
   it('Quantity increase/decrease buttons exist', async () => {

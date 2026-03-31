@@ -12,9 +12,38 @@ import Login from './pages/auth/Login.jsx'
 import Register from './pages/auth/Register.jsx'
 import VendorDashboard from './pages/vendor/VendorDashboard.jsx'
 import VendorProfile from './pages/vendor/VendorProfile.jsx'
+import VendorSettings from './pages/vendor/VendorSettings.jsx'
+import Profile from './pages/customer/Profile.jsx'
+import EditProfile from './pages/customer/EditProfile.jsx'
 import AdminDashboard from './pages/admin/AdminDashboard.jsx'
 
+import { useEffect } from 'react'
+import { useAuthStore } from './store/authStore.js'
+import { useCartStore } from './store/cartStore.js'
+import { useWishlistStore } from './store/wishlistStore.js'
+import { useFollowStore } from './store/followStore.js'
+
 export default function App() {
+  const { checkAuth, user } = useAuthStore();
+  const { fetchCart } = useCartStore();
+  const { fetchWishlist } = useWishlistStore();
+  const { fetchFollowing } = useFollowStore();
+
+  useEffect(() => {
+    const initApp = async () => {
+      await checkAuth();
+    };
+    initApp();
+  }, [checkAuth]);
+
+  useEffect(() => {
+    if (user) {
+        fetchCart();
+        fetchWishlist();
+        fetchFollowing();
+    }
+  }, [user, fetchCart, fetchWishlist, fetchFollowing]);
+
   return (
     <BrowserRouter>
       <Toaster position="bottom-right" toastOptions={{ className: 'font-sans' }} />
@@ -28,6 +57,8 @@ export default function App() {
           <Route path="cart" element={<CartPage />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="orders" element={<Orders />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="profile/edit" element={<EditProfile />} />
           <Route path="auth/login" element={<Login />} />
           <Route path="auth/register" element={<Register />} />
         </Route>
@@ -37,7 +68,7 @@ export default function App() {
             <Route path="dashboard" element={<VendorDashboard />} />
             <Route path="products" element={<div className="text-xl">Vendor Products (Implementation in progress)</div>} />
             <Route path="orders" element={<div className="text-xl">Vendor Orders (Implementation in progress)</div>} />
-            <Route path="settings" element={<div className="text-xl">Vendor Settings (Implementation in progress)</div>} />
+            <Route path="settings" element={<VendorSettings />} />
           </Route>
           
           <Route path="admin" element={<DashboardLayout expectedRole="admin" />}>

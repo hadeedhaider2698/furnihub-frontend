@@ -61,7 +61,7 @@ export const useAuthStore = create(
     }),
     {
       name: 'furnihub-auth',
-      partialize: (state) => ({ user: state.user }), // ONLY persist user, not tokens
+      partialize: (state) => ({ user: state.user, accessToken: state.accessToken }), // Persist user AND tokens
     }
   )
 );

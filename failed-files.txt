@@ -1,0 +1,12 @@
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/e2e/adminJourney.spec.js
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/e2e/auth.spec.js
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/e2e/customerJourney.spec.js
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/e2e/mobile.spec.js
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/e2e/vendorJourney.spec.js
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/auth.test.jsx
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/authGuard.test.jsx
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/cart.test.jsx
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/explore.test.jsx
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/feed.test.jsx
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/productDetail.test.jsx
+C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/vendor.test.jsx

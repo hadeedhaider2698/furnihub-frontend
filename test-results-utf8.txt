@@ -1,0 +1,3455 @@
+﻿node.exe : [2m3:46:29 
+PM[22m [33m[1m[vite]
+[22m[39m 
+[33mwarning: 
+`esbuild` option was 
+specified by 
+"vite:react-babel" 
+plugin. This option is 
+deprecated, please use 
+`oxc` instead.[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : 
+NotSpecified: (    
+[2m3:46:29 PM...` in  
+  stead.[39m:String) 
+[    ], RemoteException
+    + 
+FullyQualifiedError    
+Id : NativeCommandErr  
+  or
+ 
+[2m3:46:29 PM[22m [3
+3m[1m[vite][22m[39m 
+[33mwarning: `optimize
+Deps.esbuildOptions` 
+option was specified 
+by "vite:react-babel" 
+plugin. This option is 
+deprecated, please use 
+`optimizeDeps.rolldownO
+ptions` instead.[39m
+[33mBoth esbuild and 
+oxc options were set. 
+oxc options will be 
+used and esbuild 
+options will be 
+ignored.[39m The 
+following esbuild 
+options were set: `{ 
+jsx: 'automatic', 
+jsxImportSource: 
+undefined }`
+
+[1m[46m RUN [49m[22m [36mv4.1.2 [39m[90mC:/Users/syeda/Desktop/projects/furnihub/frontend[39m
+
+ [31mΓ¥»[39m tests/e2e/adminJourney.spec.js [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/e2e/customerJourney.spec.js [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/e2e/mobile.spec.js [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/e2e/auth.spec.js [2m([22m[2m0 test[22m[2m)[22m
+[90mstderr[2m | tests
+/frontend/authGuard.tes
+t.jsx[2m > 
+[22m[2mAuth 
+Guards[2m > 
+[22m[2m/vendor/* 
+routes redirect to / 
+if authenticated as 
+customer
+[22m[39mΓÜá∩╕Å React 
+Router Future Flag 
+Warning: React Router 
+will begin wrapping 
+state updates in `React
+.startTransition` in 
+v7. You can use the 
+`v7_startTransition` 
+future flag to opt-in 
+early. For more 
+information, see https:
+//reactrouter.com/v6/up
+grading/future#v7_start
+transition.
+ΓÜá∩╕Å React Router 
+Future Flag Warning: 
+Relative route 
+resolution within 
+Splat routes is 
+changing in v7. You 
+can use the 
+`v7_relativeSplatPath` 
+future flag to opt-in 
+early. For more 
+information, see https:
+//reactrouter.com/v6/up
+grading/future#v7_relat
+ivesplatpath.
+
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'split')
+    at DashboardLayout 
+(C:/Users/syeda/Desktop
+/projects/furnihub/fron
+tend/src/components/lay
+out/DashboardLayout.jsx
+:35:79)
+    at renderWithHooks 
+(C:\Users\syeda\Desktop
+\projects\furnihub\fron
+tend\node_modules\react
+-dom\cjs\react-dom.deve
+lopment.js:15486:18)
+    at mountIndetermina
+teComponent (C:\Users\s
+yeda\Desktop\projects\f
+urnihub\frontend\node_m
+odules\react-dom\cjs\re
+act-dom.development.js:
+20103:13)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21626:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+    at HTMLUnknownEleme
+ntImpl.dispatchEvent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:114
+:17)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'split')
+    at DashboardLayout 
+(C:/Users/syeda/Desktop
+/projects/furnihub/fron
+tend/src/components/lay
+out/DashboardLayout.jsx
+:35:79)
+    at renderWithHooks 
+(C:\Users\syeda\Desktop
+\projects\furnihub\fron
+tend\node_modules\react
+-dom\cjs\react-dom.deve
+lopment.js:15486:18)
+    at mountIndetermina
+teComponent (C:\Users\s
+yeda\Desktop\projects\f
+urnihub\frontend\node_m
+odules\react-dom\cjs\re
+act-dom.development.js:
+20103:13)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21626:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+    at HTMLUnknownEleme
+ntImpl.dispatchEvent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:114
+:17)
+[90mstderr[2m | tests
+/frontend/authGuard.tes
+t.jsx[2m > 
+[22m[2mAuth 
+Guards[2m > 
+[22m[2m/vendor/* 
+routes render for 
+vendors perfectly
+[22m[39mThe above 
+error occurred in the 
+<DashboardLayout> 
+component:
+
+    at DashboardLayout 
+(C:/Users/syeda/Desktop
+/projects/furnihub/fron
+tend/src/components/lay
+out/DashboardLayout.jsx
+:13:28)
+    at RenderedRoute (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer\dist\umd\react-ro
+uter.development.js:539
+:7)
+    at Routes (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1273:7)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at MemoryRouter (C:
+\Users\syeda\Desktop\pr
+ojects\furnihub\fronten
+d\node_modules\react-ro
+uter\dist\umd\react-rou
+ter.development.js:1101
+:7)
+    at TestRouter (C:/U
+sers/syeda/Desktop/proj
+ects/furnihub/frontend/
+tests/frontend/authGuar
+d.test.jsx:24:24)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+[90mstderr[2m | tests
+/frontend/authGuard.tes
+t.jsx[2m > 
+[22m[2mAuth 
+Guards[2m > 
+[22m[2m/vendor/* 
+routes redirect to 
+/login (or /) if not 
+authenticated
+[22m[39mNo routes 
+matched location 
+"/auth/login" 
+
+ [31mΓ¥»[39m tests/frontend/authGuard.test.jsx [2m([22m[2m3 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[33m 380[2mms[22m[39m
+     [32mΓ£ô[39m /vendor/* routes redirect to / if authenticated as customer[32m 192[2mms[22m[39m
+[31m     [31m├ù[31m /vendor/* routes render for vendors perfectly[39m[32m 107[2mms[22m[39m
+[31m     [31m├ù[31m /vendor/* routes redirect to /login (or /) if not authenticated[39m[32m 26[2mms[22m[39m
+[90mstderr[2m | tests
+/frontend/cart.test.jsx
+[2m > [22m[2mCart 
+Drawer Components[2m 
+> [22m[2mHidden by 
+default when isOpen is 
+false
+[22m[39mΓÜá∩╕Å React 
+Router Future Flag 
+Warning: React Router 
+will begin wrapping 
+state updates in `React
+.startTransition` in 
+v7. You can use the 
+`v7_startTransition` 
+future flag to opt-in 
+early. For more 
+information, see https:
+//reactrouter.com/v6/up
+grading/future#v7_start
+transition.
+ΓÜá∩╕Å React Router 
+Future Flag Warning: 
+Relative route 
+resolution within 
+Splat routes is 
+changing in v7. You 
+can use the 
+`v7_relativeSplatPath` 
+future flag to opt-in 
+early. For more 
+information, see https:
+//reactrouter.com/v6/up
+grading/future#v7_relat
+ivesplatpath.
+
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mLogin 
+Form[2m > 
+[22m[2mrenders email 
+and password fields
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Login (C:/Users/
+syeda/Desktop/projects/
+furnihub/frontend/src/p
+ages/auth/Login.jsx:30:
+69)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'add')
+    at 
+HelmetDispatcher.init (
+C:\Users\syeda\Desktop\
+projects\furnihub\front
+end\node_modules\react-
+helmet-async\lib\index.
+js:676:21)
+    at HelmetDispatcher
+.render (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-helmet-async\l
+ib\index.js:680:10)
+    at 
+finishClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19781:31)
+    at 
+updateClassComponent (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-d
+om\cjs\react-dom.develo
+pment.js:19727:24)
+    at beginWork (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-dom\c
+js\react-dom.developmen
+t.js:21650:16)
+    at HTMLUnknownEleme
+nt.callCallback (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:4164:14)
+    at HTMLUnknownEleme
+nt.callTheUserObjectsOp
+eration (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\jsdom\lib\generated\
+idl\EventListener.js:26
+:30)
+    at innerInvokeEvent
+Listeners (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\jsdom\lib\jsdom\li
+ving\events\EventTarget
+-impl.js:360:16)
+    at 
+invokeEventListeners (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\jsdom\l
+ib\jsdom\living\events\
+EventTarget-impl.js:296
+:3)
+    at HTMLUnknownEleme
+ntImpl._dispatch (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\jsdom\lib\j
+sdom\living\events\Even
+tTarget-impl.js:243:9)
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mLogin 
+Form[2m > 
+[22m[2mSubmit button 
+disabled when fields 
+empty initially (if 
+validated via form 
+state) or throws HTML5 
+validation
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Login (C:/Users/
+syeda/Desktop/projects/
+furnihub/frontend/src/p
+ages/auth/Login.jsx:30:
+69)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mLogin 
+Form[2m > 
+[22m[2mshows 
+validation error when 
+password < 6 chars
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Login (C:/Users/
+syeda/Desktop/projects/
+furnihub/frontend/src/p
+ages/auth/Login.jsx:30:
+69)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mLogin 
+Form[2m > 
+[22m[2mForgot 
+password link 
+navigates correctly
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Login (C:/Users/
+syeda/Desktop/projects/
+furnihub/frontend/src/p
+ages/auth/Login.jsx:30:
+69)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mLogin 
+Form[2m > 
+[22m[2mRegister link 
+navigates correctly
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Login (C:/Users/
+syeda/Desktop/projects/
+furnihub/frontend/src/p
+ages/auth/Login.jsx:30:
+69)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mRegister 
+Form[2m > 
+[22m[2mAll fields 
+render
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Register (C:/Use
+rs/syeda/Desktop/projec
+ts/furnihub/frontend/sr
+c/pages/auth/Register.j
+sx:33:86)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+[90mstderr[2m | tests
+/frontend/auth.test.jsx
+[2m > [22m[2mAuth 
+Components[2m > 
+[22m[2mRegister 
+Form[2m > 
+[22m[2mPassword 
+mismatch shows error
+[22m[39mThe above 
+error occurred in the 
+<HelmetDispatcher> 
+component:
+
+    at 
+HelmetDispatcher (C:\Us
+ers\syeda\Desktop\proje
+cts\furnihub\frontend\n
+ode_modules\react-helme
+t-async\lib\index.js:63
+7:24)
+    at Helmet (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-helmet-a
+sync\lib\index.js:686:1
+4)
+    at div
+    at Register (C:/Use
+rs/syeda/Desktop/projec
+ts/furnihub/frontend/sr
+c/pages/auth/Register.j
+sx:33:86)
+    at Router (C:\Users
+\syeda\Desktop\projects
+\furnihub\frontend\node
+_modules\react-router\d
+ist\umd\react-router.de
+velopment.js:1207:17)
+    at BrowserRouter (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react-r
+outer-dom\dist\umd\reac
+t-router-dom.developmen
+t.js:695:7)
+
+Consider adding an 
+error boundary to your 
+tree to customize 
+error handling 
+behavior.
+Visit https://reactjs.o
+rg/link/error-boundarie
+s to learn more about 
+error boundaries.
+
+ [31mΓ¥»[39m tests/frontend/cart.test.jsx [2m([22m[2m4 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 1323[2mms[22m[39m
+     [32mΓ£ô[39m Hidden by default when isOpen is false[32m 214[2mms[22m[39m
+[31m     [31m├ù[31m Opens and Shows cart items with images and prices[39m[32m 196[2mms[22m[39m
+     [33m[2mΓ£ô[22m[39m Quantity increase/decrease buttons exist [33m 832[2mms[22m[39m
+     [32mΓ£ô[39m Delete button renders (trash icon context)[32m 50[2mms[22m[39m
+ [31mΓ¥»[39m tests/frontend/auth.test.jsx [2m([22m[2m7 tests[22m[2m | [22m[31m7 failed[39m[2m)[22m[33m 547[2mms[22m[39m
+[31m       [31m├ù[31m renders email and password fields[39m[32m 258[2mms[22m[39m
+[31m       [31m├ù[31m Submit button disabled when fields empty initially (if validated via form state) or throws HTML5 validation[39m[32m 42[2mms[22m[39m
+[31m       [31m├ù[31m shows validation error when password < 6 chars[39m[32m 41[2mms[22m[39m
+[31m       [31m├ù[31m Forgot password link navigates correctly[39m[32m 36[2mms[22m[39m
+[31m       [31m├ù[31m Register link navigates correctly[39m[32m 43[2mms[22m[39m
+[31m       [31m├ù[31m All fields render[39m[32m 46[2mms[22m[39m
+[31m       [31m├ù[31m Password mismatch shows error[39m[32m 59[2mms[22m[39m
+ [31mΓ¥»[39m tests/e2e/vendorJourney.spec.js [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/frontend/explore.test.jsx [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/frontend/feed.test.jsx [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/frontend/productDetail.test.jsx [2m([22m[2m0 test[22m[2m)[22m
+ [31mΓ¥»[39m tests/frontend/vendor.test.jsx [2m([22m[2m0 test[22m[2m)[22m
+ [32mΓ£ô[39m tests/frontend/stores.test.js [2m([22m[2m6 tests[22m[2m)[22m[32m 26[2mms[22m[39m
+
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[39m[1m[41m Failed 
+Suites 9 [49m[22m[31
+mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/e2e/ad
+minJourney.spec.js[2m 
+[ tests/e2e/adminJourne
+y.spec.js ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import 
+"@playwright/test" 
+from "tests/e2e/adminJo
+urney.spec.js". Does 
+the file exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+e2e/adminJourney.spec.j
+s[39m:1:30
+[33m  1  |  import { 
+test, expect } from 
+'@playwright/test';
+     |                 
+               ^
+  2  |  
+  3  |  
+test.describe('Admin 
+Command Center 
+Journey', () => {[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[1/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/e2e/au
+th.spec.js[2m [ 
+tests/e2e/auth.spec.js 
+][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import 
+"@playwright/test" 
+from "tests/e2e/auth.sp
+ec.js". Does the file 
+exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+e2e/auth.spec.js[39m:1
+:30
+[33m  1  |  import { 
+test, expect } from 
+'@playwright/test';
+     |                 
+               ^
+  2  |  
+  3  |  test.describe('
+Authentication Edge 
+Cases', () => {[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[2/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/e2e/cu
+stomerJourney.spec.js[
+2m [ tests/e2e/customer
+Journey.spec.js ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import 
+"@playwright/test" 
+from "tests/e2e/custome
+rJourney.spec.js". 
+Does the file 
+exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+e2e/customerJourney.spe
+c.js[39m:1:30
+[33m  1  |  import { 
+test, expect } from 
+'@playwright/test';
+     |                 
+               ^
+  2  |  
+  3  |  test.describe('
+Customer Journey - 
+Browse to Order', () 
+=> {[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[3/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/e2e/mo
+bile.spec.js[2m [ test
+s/e2e/mobile.spec.js 
+][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import 
+"@playwright/test" 
+from "tests/e2e/mobile.
+spec.js". Does the 
+file exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+e2e/mobile.spec.js[39m
+:1:39
+[33m  1  |  import { 
+test, expect, devices 
+} from 
+'@playwright/test';
+     |                 
+                       
+ ^
+  2  |  
+  3  |  test.use({ 
+...devices['iPhone 
+13'] }); // Strict 
+Mobile Viewport 
+Override for this 
+file[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[4/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/e2e/ve
+ndorJourney.spec.js[2m
+ [ tests/e2e/vendorJour
+ney.spec.js ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import 
+"@playwright/test" 
+from "tests/e2e/vendorJ
+ourney.spec.js". Does 
+the file exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+e2e/vendorJourney.spec.
+js[39m:1:30
+[33m  1  |  import { 
+test, expect } from 
+'@playwright/test';
+     |                 
+               ^
+  2  |  
+  3  |  
+test.describe('Vendor 
+Journey', () => {[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[5/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/explore.test.jsx[2m
+ [ tests/frontend/explo
+re.test.jsx ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import "@tanstack_react
+-query" from "tests/fro
+ntend/explore.test.jsx"
+. Does the file 
+exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+frontend/explore.test.j
+sx[39m:5:49
+[33m  3  |  import { 
+BrowserRouter } from 
+"react-router-dom";
+  4  |  import { 
+expect, describe, it, 
+vi } from "vitest";
+  5  |  import { 
+QueryClient, 
+QueryClientProvider } 
+from "@tanstack_react-q
+uery";
+     |                 
+                       
+            ^
+  6  |  import Explore 
+from "../../src/pages/c
+ustomer/Explore.jsx";
+  7  |  var 
+_jsxFileName = "C:/User
+s/syeda/Desktop/project
+s/furnihub/frontend/tes
+ts/frontend/explore.tes
+t.jsx";[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[6/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/feed.test.jsx[2m [ 
+tests/frontend/feed.tes
+t.jsx ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import "@tanstack_react
+-query" from "tests/fro
+ntend/feed.test.jsx". 
+Does the file 
+exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+frontend/feed.test.jsx
+[39m:5:49
+[33m  3  |  import { 
+BrowserRouter } from 
+"react-router-dom";
+  4  |  import { 
+expect, describe, it, 
+vi } from "vitest";
+  5  |  import { 
+QueryClient, 
+QueryClientProvider } 
+from "@tanstack_react-q
+uery";
+     |                 
+                       
+            ^
+  6  |  import 
+PostCard from "../../sr
+c/components/ui/PostCar
+d.jsx";
+  7  |  import Home 
+from "../../src/pages/c
+ustomer/Home.jsx";[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[7/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/productDetail.test.j
+sx[2m [ tests/frontend
+/productDetail.test.jsx
+ ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import "@tanstack_react
+-query" from "tests/fro
+ntend/productDetail.tes
+t.jsx". Does the file 
+exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+frontend/productDetail.
+test.jsx[39m:5:0
+[33m  10 |  const 
+__vi_import_1__ = 
+await import("@testing-
+library/user-event");
+  11 |  const 
+__vi_import_2__ = 
+await import("react-rou
+ter-dom");
+  12 |  const 
+__vi_import_3__ = 
+await import("@tanstack
+_react-query");
+     |                 
+                      ^
+  13 |  const 
+__vi_import_4__ = 
+await import("../../src
+/pages/customer/Product
+Detail.jsx");
+  14 |  const 
+__vi_import_5__ = 
+await import("react/jsx
+-dev-runtime");[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[8/19]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/vendor.test.jsx[2m 
+[ tests/frontend/vendor
+.test.jsx ][22m
+[31m[1mError[22m: 
+Failed to resolve 
+import "@tanstack_react
+-query" from "tests/fro
+ntend/vendor.test.jsx".
+ Does the file 
+exist?[39m
+  Plugin: [35mvite:imp
+ort-analysis[39m
+  File: [36mC:/Users/s
+yeda/Desktop/projects/f
+urnihub/frontend/tests/
+frontend/vendor.test.js
+x[39m:5:49
+[33m  3  |  import { 
+BrowserRouter } from 
+"react-router-dom";
+  4  |  import { 
+expect, describe, it, 
+vi, beforeEach } from 
+"vitest";
+  5  |  import { 
+QueryClient, 
+QueryClientProvider } 
+from "@tanstack_react-q
+uery";
+     |                 
+                       
+            ^
+  6  |  import 
+AddProductForm from "..
+/../src/pages/vendor/Ve
+ndorDashboard.jsx";
+  7  |  var 
+_jsxFileName = "C:/User
+s/syeda/Desktop/project
+s/furnihub/frontend/tes
+ts/frontend/vendor.test
+.jsx";[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext._for
+matLog node_modules/vit
+est/node_modules/vite/d
+ist/node/chunks/node.js
+:[2m30259:39[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.erro
+r node_modules/vitest/n
+ode_modules/vite/dist/n
+ode/chunks/node.js:[2m
+30256:14[22m[39m
+[90m [2mΓ¥»[22m 
+normalizeUrl node_modul
+es/vitest/node_modules/
+vite/dist/node/chunks/n
+ode.js:[2m27544:18[22
+m[39m
+[90m [2mΓ¥»[22m node
+_modules/vitest/node_mo
+dules/vite/dist/node/ch
+unks/node.js:[2m27607:
+30[22m[39m
+[90m [2mΓ¥»[22m Tran
+sformPluginContext.tran
+sform node_modules/vite
+st/node_modules/vite/di
+st/node/chunks/node.js:
+[2m27575:4[22m[39m
+[90m [2mΓ¥»[22m Envi
+ronmentPluginContainer.
+transform node_modules/
+vitest/node_modules/vit
+e/dist/node/chunks/node
+.js:[2m30048:14[22m[
+39m
+[90m [2mΓ¥»[22m 
+loadAndTransform node_m
+odules/vitest/node_modu
+les/vite/dist/node/chun
+ks/node.js:[2m24177:26
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»[9/19]ΓÄ»[22m
+[39m
+
+
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[39m[1m[41m Failed 
+Tests 10 [49m[22m[31
+mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mLogin Form[2m > 
+[22mrenders email and 
+password fields
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mLogin Form[2m > 
+[22mSubmit button 
+disabled when fields 
+empty initially (if 
+validated via form 
+state) or throws HTML5 
+validation
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mLogin Form[2m > 
+[22mshows validation 
+error when password < 
+6 chars
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mLogin Form[2m > 
+[22mForgot password 
+link navigates 
+correctly
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mLogin Form[2m > 
+[22mRegister link 
+navigates correctly
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mRegister Form[2m 
+> [22mAll fields 
+render
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/auth.test.jsx[2m > 
+[22mAuth 
+Components[2m > 
+[22mRegister Form[2m 
+> [22mPassword 
+mismatch shows error
+[31m[1mTypeError[22m
+: Cannot read 
+properties of 
+undefined (reading 
+'add')[39m
+[90m [2mΓ¥»[22m 
+HelmetDispatcher.init n
+ode_modules/react-helme
+t-async/lib/index.js:[
+2m676:21[22m[39m
+[90m [2mΓ¥»[22m Helm
+etDispatcher.render nod
+e_modules/react-helmet-
+async/lib/index.js:[2m
+680:10[22m[39m
+[90m [2mΓ¥»[22m 
+finishClassComponent no
+de_modules/react-dom/cj
+s/react-dom.development
+.js:[2m19781:31[22m[
+39m
+[90m [2mΓ¥»[22m 
+updateClassComponent no
+de_modules/react-dom/cj
+s/react-dom.development
+.js:[2m19727:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+beginWork node_modules/
+react-dom/cjs/react-dom
+.development.js:[2m216
+50:16[22m[39m
+[90m [2mΓ¥»[22m 
+beginWork$1 node_module
+s/react-dom/cjs/react-d
+om.development.js:[2m2
+7465:14[22m[39m
+[90m [2mΓ¥»[22m 
+performUnitOfWork node_
+modules/react-dom/cjs/r
+eact-dom.development.js
+:[2m26599:12[22m[39m
+[90m [2mΓ¥»[22m 
+workLoopSync node_modul
+es/react-dom/cjs/react-
+dom.development.js:[2m
+26505:5[22m[39m
+[90m [2mΓ¥»[22m 
+renderRootSync node_mod
+ules/react-dom/cjs/reac
+t-dom.development.js:[
+2m26473:7[22m[39m
+[90m [2mΓ¥»[22m reco
+verFromConcurrentError 
+node_modules/react-dom/
+cjs/react-dom.developme
+nt.js:[2m25889:20[22m
+[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»[10/19]ΓÄ»[22m[
+39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/authGuard.test.jsx[
+2m > [22mAuth 
+Guards[2m > 
+[22m/vendor/* routes 
+render for vendors 
+perfectly
+[31m[1mTypeError[22m
+: Cannot read 
+properties of 
+undefined (reading 
+'split')[39m
+[36m [2mΓ¥»[22m 
+DashboardLayout src/com
+ponents/layout/Dashboar
+dLayout.jsx:[2m35:79[
+22m[39m
+    [90m 33|[39m     
+    [33m<[39m[33mdiv
+[39m [33mclassName[3
+9m[33m=[39m[32m"mb-8
+"[39m[33m>[39m
+    [90m 34|[39m     
+      <h2 
+className="text-xl 
+font-serif font-bold 
+text-primary capΓÇª
+    [90m 35|[39m     
+      <p 
+className="text-sm text
+-text-secondary">Welcom
+e back, {usΓÇª
+    [90m   |[39m     
+                       
+                       
+                       
+     [31m^[39m
+    [90m 36|[39m     
+    [33m<[39m[33m/[
+39m[33mdiv[39m[33m>
+[39m
+    [90m 37|[39m
+[90m [2mΓ¥»[22m 
+renderWithHooks node_mo
+dules/react-dom/cjs/rea
+ct-dom.development.js:
+[2m15486:18[22m[39m
+[90m [2mΓ¥»[22m moun
+tIndeterminateComponent
+ node_modules/react-dom
+/cjs/react-dom.developm
+ent.js:[2m20103:13[22
+m[39m
+[90m [2mΓ¥»[22m 
+beginWork node_modules/
+react-dom/cjs/react-dom
+.development.js:[2m216
+26:16[22m[39m
+[90m [2mΓ¥»[22m 
+beginWork$1 node_module
+s/react-dom/cjs/react-d
+om.development.js:[2m2
+7465:14[22m[39m
+[90m [2mΓ¥»[22m 
+performUnitOfWork node_
+modules/react-dom/cjs/r
+eact-dom.development.js
+:[2m26599:12[22m[39m
+[90m [2mΓ¥»[22m 
+workLoopSync node_modul
+es/react-dom/cjs/react-
+dom.development.js:[2m
+26505:5[22m[39m
+[90m [2mΓ¥»[22m 
+renderRootSync node_mod
+ules/react-dom/cjs/reac
+t-dom.development.js:[
+2m26473:7[22m[39m
+[90m [2mΓ¥»[22m reco
+verFromConcurrentError 
+node_modules/react-dom/
+cjs/react-dom.developme
+nt.js:[2m25889:20[22m
+[39m
+[90m [2mΓ¥»[22m perf
+ormConcurrentWorkOnRoot
+ node_modules/react-dom
+/cjs/react-dom.developm
+ent.js:[2m25789:22[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»[11/19]ΓÄ»[22m[
+39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/authGuard.test.jsx[
+2m > [22mAuth 
+Guards[2m > 
+[22m/vendor/* routes 
+redirect to /login (or 
+/) if not authenticated
+[31m[1mTestingLibrary
+ElementError[22m: 
+Unable to find an 
+element with the text: 
+Home Redirect. This 
+could be because the 
+text is broken up by 
+multiple elements. In 
+this case, you can 
+provide a function for 
+your text matcher to 
+make your matcher more 
+flexible.
+
+Ignored nodes: 
+comments, script, style
+[36m<body>[31m
+  [36m<div />[31m
+[36m</body>[31m[39m
+[90m [2mΓ¥»[22m 
+Object.getElementError 
+node_modules/@testing-l
+ibrary/dom/dist/config.
+js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node
+_modules/@testing-libra
+ry/dom/dist/query-helpe
+rs.js:[2m76:38[22m[3
+9m
+[90m [2mΓ¥»[22m node
+_modules/@testing-libra
+ry/dom/dist/query-helpe
+rs.js:[2m52:17[22m[3
+9m
+[90m [2mΓ¥»[22m node
+_modules/@testing-libra
+ry/dom/dist/query-helpe
+rs.js:[2m95:19[22m[3
+9m
+[36m [2mΓ¥»[22m test
+s/frontend/authGuard.te
+st.jsx:[2m59:19[22m[
+39m
+    [90m 57|[39m
+    [90m 58|[39m     
+[90m// Redirects 
+inherently[39m
+    [90m 59|[39m     
+[34mexpect[39m(screen
+[33m.[39m[34mgetByTe
+xt[39m([32m'Home Redi
+rect'[39m))[33m.[39m
+[34mtoBeInTheDocument
+[39m()[33m;[39m
+    [90m   |[39m     
+              
+[31m^[39m
+    [90m 60|[39m     
+[34mexpect[39m(screen
+[33m.[39m[34mqueryBy
+Text[39m([32m'Vendor 
+Dashboard Allowed'[39m
+))[33m.[39m[34mtoBeN
+ull[39m()[33m;[39m
+    [90m 61|[39m   
+})[33m;[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»[12/19]ΓÄ»[22m[
+39m
+
+[41m[1m FAIL 
+[22m[49m tests/fronte
+nd/cart.test.jsx[2m > 
+[22mCart Drawer 
+Components[2m > 
+[22mOpens and Shows 
+cart items with images 
+and prices
+[31m[1mTestingLibrary
+ElementError[22m[39m:
+ Unable to find an 
+element with the text: 
+/20,000/i. This could 
+be because the text is 
+broken up by multiple 
+elements. In this 
+case, you can provide 
+a function for your 
+text matcher to make 
+your matcher more 
+flexible.
+
+Ignored nodes: 
+comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=
+[32m"fixed inset-0 
+bg-[#1A1A2E]/40 z-50 
+backdrop-blur-sm"[39m
+      [33mstyle[39m=
+[32m"opacity: 0;"[39m
+    [36m/>[39m
+    [36m<div[39m
+      [33mclass[39m=
+[32m"fixed bottom-0 
+left-0 right-0 
+max-h-[85vh] h-max 
+bg-[var(--surface-2)] 
+z-50 rounded-t-3xl 
+shadow-2xl flex 
+flex-col md:top-0 
+md:bottom-auto 
+md:h-screen 
+md:w-[400px] 
+md:left-auto 
+md:right-0 
+md:rounded-none"[39m
+      [33mstyle[39m=
+[32m"transform: 
+translateY(100%);"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m
+=[32m"w-full flex 
+justify-center pt-3 
+pb-2 md:hidden"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[3
+9m=[32m"w-12 h-1.5 
+bg-[var(--border)] 
+rounded-full"[39m
+        [36m/>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m
+=[32m"flex 
+items-center 
+justify-between p-6 
+border-b border-[var(--
+border)]"[39m
+      [36m>[39m
+        [36m<h2[39m
+          [33mclass[3
+9m=[32m"text-xl 
+font-serif font-bold 
+text-[var(--primary)] 
+flex items-center 
+space-x-2"[39m
+        [36m>[39m
+          
+[36m<svg[39m
+            [33mclass
+[39m=[32m"lucide 
+lucide-shopping-bag tex
+t-[var(--accent)]"[39m
+            [33mfill[
+39m=[32m"none"[39m
+            [33mheight
+[39m=[32m"22"[39m
+            [33mstroke
+[39m=[32m"currentColo
+r"[39m
+            [33mstroke
+-linecap[39m=[32m"rou
+nd"[39m
+            [33mstroke
+-linejoin[39m=[32m"ro
+und"[39m
+            [33mstroke
+-width[39m=[32m"2"[3
+9m
+            [33mviewBo
+x[39m=[32m"0 0 24 
+24"[39m
+            [33mwidth
+[39m=[32m"22"[39m
+            [33mxmlns
+[39m=[32m"http://www.w
+3.org/2000/svg"[39m
+          [36m>[39m
+            
+[36m<path[39m
+              
+[33md[39m=[32m"M6 2 
+3 6v14a2 2 0 0 0 2 
+2h14a2 2 0 0 0 
+2-2V6l-3-4Z"[39m
+            
+[36m/>[39m
+            
+[36m<path[39m
+              
+[33md[39m=[32m"M3 
+6h18"[39m
+            
+[36m/>[39m
+            
+[36m<path[39m
+              
+[33md[39m=[32m"M16 
+10a4 4 0 0 1-8 0"[39m
+            
+[36m/>[39m
+          
+[36m</svg>[39m
+          
+[36m<span>[39m
+            [0mYour 
+Bag[0m
+          
+[36m</span>[39m
+        [36m</h2>[39m
+        
+[36m<button[39m
+          [33mclass[3
+9m=[32m"p-2 hover:bg-[
+var(--surface)] text-[v
+ar(--text-primary)] 
+rounded-full 
+transition-colors"[39m
+        [36m>[39m
+          
+[36m<svg[39m
+            [33mclass
+[39m=[32m"lucide 
+lucide-x "[39m
+            [33mfill[
+39m=[32m"none"[39m
+            [33mheight
+[39m=[32m"20"[39m
+            [33mstroke
+[39m=[32m"currentColo
+r"[39m
+            [33mstroke
+-linecap[39m=[32m"rou
+nd"[39m
+            [33mstroke
+-linejoin[39m=[32m"ro
+und"[39m
+            [33mstroke
+-width[39m=[32m"2"[3
+9m
+            [33mviewBo
+x[39m=[32m"0 0 24 
+24"[39m
+            [33mwidth
+[39m=[32m"20"[39m
+            [33mxmlns
+[39m=[32m"http://www.w
+3.org/2000/svg"[39m
+          [36m>[39m
+            
+[36m<path[39m
+              
+[33md[39m=[32m"M18 
+6 6 18"[39m
+            
+[36m/>[39m
+            
+[36m<path[39m
+              
+[33md[39m=[32m"m6 6 
+12 12"[39m
+            
+[36m/>[39m
+          
+[36m</svg>[39m
+        
+[36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m
+=[32m"flex-1 
+overflow-y-auto p-6 
+space-y-6 max-h-[50vh] 
+md:max-h-full"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[3
+9m=[32m"flex 
+gap-4"[39m
+        [36m>[39m
+          
+[36m<div[39m
+            [33mclass
+[39m=[32m"h-20 w-20 
+rounded-lg border 
+border-[var(--border)] 
+bg-[var(--surface)] 
+overflow-hidden 
+flex-shrink-0"[39m
+          [36m>[39m
+            
+[36m<img[39m
+              [33mclas
+s[39m=[32m"w-full 
+h-full 
+object-cover"[39m
+              [33msrc
+[39m=[32m"pic.jpg"[39
+m
+            
+[36m/>[39m
+          
+[36m</div>[39m
+          
+[36m<div[39m
+            [33mclass
+[39m=[32m"flex-1 flex 
+flex-col 
+justify-between 
+py-1"[39m
+          [36m>[39m
+            
+[36m<div>[39m
+              
+[36m<h4[39m
+                [33mcl
+ass[39m=[32m"font-sem
+ibold 
+text-[var(--primary)] 
+text-sm 
+line-clamp-1"[39m
+              
+[36m>[39m
+                
+[0mCart Sofa[0m
+              
+[36m</h4>[39m
+
+[2m Test Files [22m [1m[31m12 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (13)[39m
+[2m      Tests [22m [1m[31m10 failed[39m[22m[2m | [22m[1m[32m10 passed[39m[22m[90m (20)[39m
+[2m   Start at [22m 15:46:29
+[2m   Duration [22m 22.73s[2m (transform 4.84s, setup 18.53s, import 11.36s, tests 2.28s, environment 79.76s)[22m
+
+              
+[36m<p[39m
+                [33mcl
+ass[39m=[32m"text-sm 
+font-bold mt-1 text-[va
+r(--accent-2)]"[39m
+              
+[36m>[39m
+                
+[0m$[0m
+                
+[0m10000[0m
+              
+[36m</p>[39m
+            
+[36m</div>[39m
+            
+[36m<div[39m
+              [33mclas
+s[39m=[32m"flex 
+items-center 
+justify-between 
+mt-2"[39m
+            [36m>[39m
+              
+[36m<div[39m
+                [33mcl
+ass[39m=[32m"flex 
+items-center border 
+border-[var(--border)] 
+rounded-md bg-[var(--su
+rface)]"[39m
+              
+[36m>[39m
+                
+[36m<button[39m
+                  [33m
+class[39m=[32m"p-1 
+px-2 text-[var(--text-p
+rimary)]"[39m
+                
+[36m>[39m
+                  
+[36m<svg[39m
+                    [3
+3mclass[39m=[32m"luci
+de lucide-minus "[39m
+                    [3
+3mfill[39m=[32m"none"
+[39m
+                    [3
+3mheight[39m=[32m"14"
+[39m
+                    [3
+3mstroke[39m=[32m"cur
+rentColor"[39m
+                    [3
+3mstroke-linecap[39m=
+[32m"round"[39m
+                    [3
+3mstroke-linejoin[39m=
+[32m"round"[39m
+                    [3
+3mstroke-width[39m=[3
+2m"2"[39m
+                    [3
+3mviewBox[39m=[32m"0 
+0 24 24"[39m
+                    [3
+3mwidth[39m=[32m"14"
+[39m
+                    [3
+3mxmlns[39m=[32m"http
+://www.w3.org/2000/svg"
+[39m
+                  
+[36m>[39m
+                    
+[36m<path[39m
+                      
+[33md[39m=[32m"M5 
+12h14"[39m
+                    
+[36m/>[39m
+                  
+[36m</svg>[39m
+                
+[36m</button>[39m
+                
+[36m<span[39m
+                  [33m
+class[39m=[32m"text-s
+m font-bold w-6 
+text-center text-[var(-
+-primary)]"[39m
+                
+[36m>[39m
+                  
+[0m2[0m
+                
+[36m</span>[39m
+                
+[36m<button[39m
+                  [33m
+class[39m=[32m"p-1 
+px-2 text-[var(--text-p
+rimary)]"[39m
+                
+[36m>[39m
+                  
+[36m<svg[39m
+                    [3
+3mclass[39m=[32m"luci
+de lucide-plus "[39m
+                    [3
+3mfill[39m=[32m"none"
+[39m
+                    [3
+3mheight[39m=[32m"14"
+[39m
+                    [3
+3mstroke[39m=[32m"cur
+rentColor"[39m
+                    [3
+3mstroke-linecap[39m=
+[32m"round"[39m
+                    [3
+3mstroke-linejoin[39m=
+[32m"round"[39m
+                    [3
+3mstroke-width[39m=[3
+2m"2"[39m
+                    [3
+3mviewBox[39m=[32m"0 
+0 24 24"[39m
+                    [3
+3mwidth[39m=[32m"14"
+[39m
+                    [3
+3mxmlns[39m=[32m"http
+://www.w3.org/2000/svg"
+[39m
+                  
+[36m>[39m
+                    
+[36m<path[39m
+                      
+[33md[39m=[32m"M5 
+12h14"[39m
+                    
+[36m/>[39m
+                    
+[36m<path[39m
+                      
+[33md[39m=[32m"M12 
+5v14"[39m
+                    
+[36m/>[39m
+                  
+[36m</svg>[39m
+                
+[36m</button>[39m
+              
+[36m</div>[39m
+              
+[36m<button[39m
+                [33mcl
+ass[39m=[32m"text-xs 
+text-[var(--error)] 
+font-bold"[39m
+              
+[36m>[39m
+                
+[0mRemove[0m
+              
+[36m</button>[39m
+            
+[36m</div>[39m
+          
+[36m</div>[39m
+        
+[36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m
+=[32m"p-6 border-t 
+border-[var(--border)] 
+bg-[var(--surface-2)]"
+[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[3
+9m=[32m"flex 
+items-end 
+justify-between 
+font-bold mb-6 text-[va
+r(--primary)]"[39m
+        [36m>[39m
+          
+[36m<span[39m
+            [33mclass
+[39m=[32m"text-[var(--
+text-secondary)] 
+text-sm uppercase 
+tracking-wider"[39m
+          [36m>[39m
+            
+[0mSubtotal[0m
+          
+[36m</span>[39m
+          
+[36m<span[39m
+            [33mclass
+[39m=[32m"font-serif 
+text-3xl"[39m
+          [36m>[39m
+            [0m$[0m
+            
+[0m20000[0m
+          
+[36m</span>[39m
+        
+[36m</div>[39m
+        
+[36m<button[39m
+          [33mclass[3
+9m=[32m"w-full 
+bg-[var(--primary)] 
+text-white font-bold 
+tracking-wide py-4 
+rounded-xl 
+active:scale-95 
+transition-all 
+text-base"[39m
+        [36m>[39m
+          
+[0mCheckout[0m
+        
+[36m</button>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+[90m [2mΓ¥»[22m 
+Object.getElementError 
+node_modules/@testing-l
+ibrary/dom/dist/config.
+js:[2m37:19[22m[39m
+[90m [2mΓ¥»[22m node
+_modules/@testing-libra
+ry/dom/dist/query-helpe
+rs.js:[2m76:38[22m[3
+9m
+[90m [2mΓ¥»[22m node
+_modules/@testing-libra
+ry/dom/dist/query-helpe
+rs.js:[2m52:17[22m[3
+9m
+[90m [2mΓ¥»[22m node
+_modules/@testing-libra
+ry/dom/dist/query-helpe
+rs.js:[2m95:19[22m[3
+9m
+[36m [2mΓ¥»[22m test
+s/frontend/cart.test.js
+x:[2m50:19[22m[39m
+    [90m 48|[39m     
+[34mexpect[39m(screen
+[33m.[39m[34mgetByTe
+xt[39m([32m'Your Bag'
+[39m))[33m.[39m[34m
+toBeInTheDocument[39m(
+)[33m;[39m
+    [90m 49|[39m     
+[34mexpect[39m(screen
+[33m.[39m[34mgetByTe
+xt[39m([32m'Cart Sofa
+'[39m))[33m.[39m[34
+mtoBeInTheDocument[39m
+()[33m;[39m
+    [90m 50|[39m     
+expect(screen.getByText
+(/20,000/i)).toBeInTheD
+ocument(); // Math fΓÇª
+    [90m   |[39m     
+              
+[31m^[39m
+    [90m 51|[39m   
+})[33m;[39m
+    [90m 52|[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ
+»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»Γ
+Ä»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»[13/19]ΓÄ»[22m[
+39m
+

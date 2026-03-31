@@ -1,0 +1,433 @@
+﻿node.exe : [2m4:13:55 
+PM[22m [33m[1m[vite]
+[22m[39m 
+[33mwarning: 
+`esbuild` option was 
+specified by 
+"vite:react-babel" 
+plugin. This option is 
+deprecated, please use 
+`oxc` instead.[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : 
+NotSpecified: (    
+[2m4:13:55 PM...` in  
+  stead.[39m:String) 
+[    ], RemoteException
+    + 
+FullyQualifiedError    
+Id : NativeCommandErr  
+  or
+ 
+[2m4:13:55 PM[22m [3
+3m[1m[vite][22m[39m 
+[33mwarning: `optimize
+Deps.esbuildOptions` 
+option was specified 
+by "vite:react-babel" 
+plugin. This option is 
+deprecated, please use 
+`optimizeDeps.rolldownO
+ptions` instead.[39m
+[33mBoth esbuild and 
+oxc options were set. 
+oxc options will be 
+used and esbuild 
+options will be 
+ignored.[39m The 
+following esbuild 
+options were set: `{ 
+jsx: 'automatic', 
+jsxImportSource: 
+undefined }`
+ReferenceError: 
+IntersectionObserver 
+is not defined
+    at initIntersection
+Observer (file:///C:/Us
+ers/syeda/Desktop/proje
+cts/furnihub/frontend/n
+ode_modules/framer-moti
+on/dist/es/motion/featu
+res/viewport/observers.
+mjs:35:34)
+    at 
+observeIntersection (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/observers.mjs:40:39)
+    at InViewFeature.st
+artObserver (file:///C:
+/Users/syeda/Desktop/pr
+ojects/furnihub/fronten
+d/node_modules/framer-m
+otion/dist/es/motion/fe
+atures/viewport/index.m
+js:52:16)
+    at 
+InViewFeature.mount (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/index.mjs:55:14)
+    at HTMLVisualElemen
+t.updateFeatures (file:
+///C:/Users/syeda/Deskt
+op/projects/furnihub/fr
+ontend/node_modules/fra
+mer-motion/dist/es/rend
+er/VisualElement.mjs:26
+2:29)
+    at file:///C:/Users
+/syeda/Desktop/projects
+/furnihub/frontend/node
+_modules/framer-motion/
+dist/es/motion/utils/us
+e-visual-element.mjs:70
+:23
+    at commitHookEffect
+ListMount (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+189:26)
+    at commitLayoutEffe
+ctOnFiber (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+312:15)
+    at commitLayoutMoun
+tEffects_complete (C:\U
+sers\syeda\Desktop\proj
+ects\furnihub\frontend\
+node_modules\react-dom\
+cjs\react-dom.developme
+nt.js:24727:9)
+    at commitLayoutEffe
+cts_begin (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:24
+713:7)
+ReferenceError: 
+IntersectionObserver 
+is not defined
+    at initIntersection
+Observer (file:///C:/Us
+ers/syeda/Desktop/proje
+cts/furnihub/frontend/n
+ode_modules/framer-moti
+on/dist/es/motion/featu
+res/viewport/observers.
+mjs:35:34)
+    at 
+observeIntersection (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/observers.mjs:40:39)
+    at InViewFeature.st
+artObserver (file:///C:
+/Users/syeda/Desktop/pr
+ojects/furnihub/fronten
+d/node_modules/framer-m
+otion/dist/es/motion/fe
+atures/viewport/index.m
+js:52:16)
+    at 
+InViewFeature.mount (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/index.mjs:55:14)
+    at HTMLVisualElemen
+t.updateFeatures (file:
+///C:/Users/syeda/Deskt
+op/projects/furnihub/fr
+ontend/node_modules/fra
+mer-motion/dist/es/rend
+er/VisualElement.mjs:26
+2:29)
+    at file:///C:/Users
+/syeda/Desktop/projects
+/furnihub/frontend/node
+_modules/framer-motion/
+dist/es/motion/utils/us
+e-visual-element.mjs:70
+:23
+    at commitHookEffect
+ListMount (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+189:26)
+    at commitLayoutEffe
+ctOnFiber (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+312:15)
+    at commitLayoutMoun
+tEffects_complete (C:\U
+sers\syeda\Desktop\proj
+ects\furnihub\frontend\
+node_modules\react-dom\
+cjs\react-dom.developme
+nt.js:24727:9)
+    at commitLayoutEffe
+cts_begin (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:24
+713:7)
+ReferenceError: 
+IntersectionObserver 
+is not defined
+    at initIntersection
+Observer (file:///C:/Us
+ers/syeda/Desktop/proje
+cts/furnihub/frontend/n
+ode_modules/framer-moti
+on/dist/es/motion/featu
+res/viewport/observers.
+mjs:35:34)
+    at 
+observeIntersection (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/observers.mjs:40:39)
+    at InViewFeature.st
+artObserver (file:///C:
+/Users/syeda/Desktop/pr
+ojects/furnihub/fronten
+d/node_modules/framer-m
+otion/dist/es/motion/fe
+atures/viewport/index.m
+js:52:16)
+    at 
+InViewFeature.mount (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/index.mjs:55:14)
+    at HTMLVisualElemen
+t.updateFeatures (file:
+///C:/Users/syeda/Deskt
+op/projects/furnihub/fr
+ontend/node_modules/fra
+mer-motion/dist/es/rend
+er/VisualElement.mjs:26
+2:29)
+    at file:///C:/Users
+/syeda/Desktop/projects
+/furnihub/frontend/node
+_modules/framer-motion/
+dist/es/motion/utils/us
+e-visual-element.mjs:70
+:23
+    at commitHookEffect
+ListMount (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+189:26)
+    at commitLayoutEffe
+ctOnFiber (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+312:15)
+    at commitLayoutMoun
+tEffects_complete (C:\U
+sers\syeda\Desktop\proj
+ects\furnihub\frontend\
+node_modules\react-dom\
+cjs\react-dom.developme
+nt.js:24727:9)
+    at commitLayoutEffe
+cts_begin (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:24
+713:7)
+ReferenceError: 
+IntersectionObserver 
+is not defined
+    at initIntersection
+Observer (file:///C:/Us
+ers/syeda/Desktop/proje
+cts/furnihub/frontend/n
+ode_modules/framer-moti
+on/dist/es/motion/featu
+res/viewport/observers.
+mjs:35:34)
+    at 
+observeIntersection (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/observers.mjs:40:39)
+    at InViewFeature.st
+artObserver (file:///C:
+/Users/syeda/Desktop/pr
+ojects/furnihub/fronten
+d/node_modules/framer-m
+otion/dist/es/motion/fe
+atures/viewport/index.m
+js:52:16)
+    at 
+InViewFeature.mount (fi
+le:///C:/Users/syeda/De
+sktop/projects/furnihub
+/frontend/node_modules/
+framer-motion/dist/es/m
+otion/features/viewport
+/index.mjs:55:14)
+    at HTMLVisualElemen
+t.updateFeatures (file:
+///C:/Users/syeda/Deskt
+op/projects/furnihub/fr
+ontend/node_modules/fra
+mer-motion/dist/es/rend
+er/VisualElement.mjs:26
+2:29)
+    at file:///C:/Users
+/syeda/Desktop/projects
+/furnihub/frontend/node
+_modules/framer-motion/
+dist/es/motion/utils/us
+e-visual-element.mjs:70
+:23
+    at commitHookEffect
+ListMount (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+189:26)
+    at commitLayoutEffe
+ctOnFiber (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+312:15)
+    at commitLayoutMoun
+tEffects_complete (C:\U
+sers\syeda\Desktop\proj
+ects\furnihub\frontend\
+node_modules\react-dom\
+cjs\react-dom.developme
+nt.js:24727:9)
+    at commitLayoutEffe
+cts_begin (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:24
+713:7)
+ReferenceError: 
+IntersectionObserver 
+is not defined
+    at C:/Users/syeda/D
+esktop/projects/furnihu
+b/frontend/src/pages/cu
+stomer/Home.jsx:26:22
+    at commitHookEffect
+ListMount (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:23
+189:26)
+    at commitPassiveMou
+ntOnFiber (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:24
+970:11)
+    at commitPassiveMou
+ntEffects_complete (C:\
+Users\syeda\Desktop\pro
+jects\furnihub\frontend
+\node_modules\react-dom
+\cjs\react-dom.developm
+ent.js:24930:9)
+    at commitPassiveMou
+ntEffects_begin (C:\Use
+rs\syeda\Desktop\projec
+ts\furnihub\frontend\no
+de_modules\react-dom\cj
+s\react-dom.development
+.js:24917:7)
+    at commitPassiveMou
+ntEffects (C:\Users\sye
+da\Desktop\projects\fur
+nihub\frontend\node_mod
+ules\react-dom\cjs\reac
+t-dom.development.js:24
+905:3)
+    at flushPassiveEffe
+ctsImpl (C:\Users\syeda
+\Desktop\projects\furni
+hub\frontend\node_modul
+es\react-dom\cjs\react-
+dom.development.js:2707
+8:3)
+    at 
+flushPassiveEffects (C:
+\Users\syeda\Desktop\pr
+ojects\furnihub\fronten
+d\node_modules\react-do
+m\cjs\react-dom.develop
+ment.js:27023:14)
+    at C:\Users\syeda\D
+esktop\projects\furnihu
+b\frontend\node_modules
+\react-dom\cjs\react-do
+m.development.js:26808:
+9
+    at flushActQueue (C
+:\Users\syeda\Desktop\p
+rojects\furnihub\fronte
+nd\node_modules\react\c
+js\react.development.js
+:2667:24)
+{"numTotalTestSuites":24,"numPassedTestSuites":8,"numFailedTestSuites":16,"numPendingTestSuites":0,"numTotalTests":35,"numPassedTests":19,"numFailedTests":16,"numPendingTests":0,"numTodoTests":0,"snapshot":{"added":0,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0,"didUpdate":false},"startTime":1774955635441,"success":false,"testResults":[{"assertionResults":[{"ancestorTitles":["Auth Components","Login Form"],"fullName":"Auth Components Login Form renders email and password fields","status":"passed","title":"renders email and password fields","duration":920.7474000000002,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Auth Components","Login Form"],"fullName":"Auth Components Login Form Submit button disabled when fields empty initially (if validated via form state) or throws HTML5 validation","status":"passed","title":"Submit button disabled when fields empty initially (if validated via form state) or throws HTML5 validation","duration":166.39700000000084,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Auth Components","Login Form"],"fullName":"Auth Components Login Form shows validation error when password < 6 chars","status":"failed","title":"shows validation error when password < 6 chars","duration":2137.0879000000004,"failureMessages":["Error: Unable to find an element with the text: /String must contain at least 6 character|invalid/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<title>\u001b[39m\n        \u001b[0mLog In | FurniHub\u001b[0m\n      \u001b[36m</title>\u001b[39m\n      \u001b[36m<div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"max-w-md w-full space-y-8 bg-surface-2 p-8 rounded-xl shadow-warm border border-border\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[36m<div>\u001b[39m\n          \u001b[36m<h2\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"mt-6 text-center text-3xl font-serif font-bold text-primary\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mWelcome back\u001b[0m\n          \u001b[36m</h2>\u001b[39m\n          \u001b[36m<p\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"mt-2 text-center text-sm text-text-secondary\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mOr \u001b[0m\n            \u001b[36m<a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"font-medium text-accent hover:text-accent-2 transition-colors\"\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\"/auth/register\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[0mcreate a new account\u001b[0m\n            \u001b[36m</a>\u001b[39m\n          \u001b[36m</p>\u001b[39m\n        \u001b[36m</div>\u001b[39m\n        \u001b[36m<form\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"mt-8 space-y-6\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[36m<div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"space-y-4\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"email\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mEmail address\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mautocomplete\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"email\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mPassword\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mautocomplete\u001b[39m=\u001b[32m\"current-password\"\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"password\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"password\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n          \u001b[36m</div>\u001b[39m\n          \u001b[36m<div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"flex items-center justify-between\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"flex items-center\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"h-4 w-4 text-primary focus:ring-primary border-border rounded\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"remember-me\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"remember-me\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"checkbox\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"ml-2 block text-sm text-text-secondary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"remember-me\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mRemember me\u001b[0m\n              \u001b[36m</label>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"font-medium text-accent hover:text-accent-2 transition-colors\"\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\"/auth/forgot-password\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mForgot your password?\u001b[0m\n              \u001b[36m</a>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n          \u001b[36m</div>\u001b[39m\n          \u001b[36m<button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"inline-flex items-center justify-center rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-primary text-white hover:bg-opacity-90 shadow-warm focus:ring-primary h-11 px-6 text-base w-full\"\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\"submit\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mSign In\u001b[0m\n          \u001b[36m</button>\u001b[39m\n        \u001b[36m</form>\u001b[39m\n      \u001b[36m</div>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at waitForWrapper (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\wait-for.js:163:27)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/auth.test.jsx:47:13\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:20"],"meta":{},"tags":[]},{"ancestorTitles":["Auth Components","Login Form"],"fullName":"Auth Components Login Form Forgot password link navigates correctly","status":"passed","title":"Forgot password link navigates correctly","duration":158.4323000000004,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Auth Components","Login Form"],"fullName":"Auth Components Login Form Register link navigates correctly","status":"passed","title":"Register link navigates correctly","duration":124.18289999999979,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Auth Components","Register Form"],"fullName":"Auth Components Register Form All fields render","status":"failed","title":"All fields render","duration":47.82480000000032,"failureMessages":["TestingLibraryElementError: Found multiple elements with the text of: /Password/i\n\nHere are the matching elements:\n\nIgnored nodes: comments, script, style\n\u001b[36m<input\u001b[39m\n  \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n  \u001b[33mid\u001b[39m=\u001b[32m\"password\"\u001b[39m\n  \u001b[33mname\u001b[39m=\u001b[32m\"password\"\u001b[39m\n  \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n\u001b[36m/>\u001b[39m\n\nIgnored nodes: comments, script, style\n\u001b[36m<input\u001b[39m\n  \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n  \u001b[33mid\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n  \u001b[33mname\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n  \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n\u001b[36m/>\u001b[39m\n\n(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<title>\u001b[39m\n        \u001b[0mCreate Account | FurniHub\u001b[0m\n      \u001b[36m</title>\u001b[39m\n      \u001b[36m<div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"max-w-md w-full space-y-8 bg-surface-2 p-8 rounded-xl shadow-warm border border-border\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[36m<div>\u001b[39m\n          \u001b[36m<h2\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"mt-6 text-center text-3xl font-serif font-bold text-primary\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mCreate an account\u001b[0m\n          \u001b[36m</h2>\u001b[39m\n          \u001b[36m<p\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"mt-2 text-center text-sm text-text-secondary\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mAlready have an account? \u001b[0m\n            \u001b[36m<a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"font-medium text-accent hover:text-accent-2 transition-colors\"\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\"/auth/login\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[0mLog in\u001b[0m\n            \u001b[36m</a>\u001b[39m\n          \u001b[36m</p>\u001b[39m\n        \u001b[36m</div>\u001b[39m\n        \u001b[36m<form\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"mt-8 space-y-6\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[36m<div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"space-y-4\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"name\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mFull Name\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"name\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"name\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"email\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mEmail address\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"email\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mPassword\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"password\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"password\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mConfirm Password\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n          \u001b[36m</div>\u001b[39m\n          \u001b[36m<button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"inline-flex items-center justify-center rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-primary text-white hover:bg-opacity-90 shadow-warm focus:ring-primary h-11 px-6 text-base w-full\"\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\"submit\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mSign Up\u001b[0m\n          \u001b[36m</button>\u001b[39m\n        \u001b[36m</form>\u001b[39m\n      \u001b[36m</div>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at Object.getElementError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\config.js:37:19)\n    at getElementError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:20:35)\n    at getMultipleElementsFoundError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:23:10)\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:55:13\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:95:19\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/auth.test.jsx:70:21\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:26\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2316:20\n    at new Promise (<anonymous>)"],"meta":{},"tags":[]},{"ancestorTitles":["Auth Components","Register Form"],"fullName":"Auth Components Register Form Password mismatch shows error","status":"failed","title":"Password mismatch shows error","duration":650.3195999999989,"failureMessages":["TestingLibraryElementError: Found multiple elements with the text of: /Password/i\n\nHere are the matching elements:\n\nIgnored nodes: comments, script, style\n\u001b[36m<input\u001b[39m\n  \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n  \u001b[33mid\u001b[39m=\u001b[32m\"password\"\u001b[39m\n  \u001b[33mname\u001b[39m=\u001b[32m\"password\"\u001b[39m\n  \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n\u001b[36m/>\u001b[39m\n\nIgnored nodes: comments, script, style\n\u001b[36m<input\u001b[39m\n  \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n  \u001b[33mid\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n  \u001b[33mname\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n  \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n\u001b[36m/>\u001b[39m\n\n(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<title>\u001b[39m\n        \u001b[0mCreate Account | FurniHub\u001b[0m\n      \u001b[36m</title>\u001b[39m\n      \u001b[36m<div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"max-w-md w-full space-y-8 bg-surface-2 p-8 rounded-xl shadow-warm border border-border\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[36m<div>\u001b[39m\n          \u001b[36m<h2\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"mt-6 text-center text-3xl font-serif font-bold text-primary\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mCreate an account\u001b[0m\n          \u001b[36m</h2>\u001b[39m\n          \u001b[36m<p\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"mt-2 text-center text-sm text-text-secondary\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mAlready have an account? \u001b[0m\n            \u001b[36m<a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"font-medium text-accent hover:text-accent-2 transition-colors\"\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\"/auth/login\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[0mLog in\u001b[0m\n            \u001b[36m</a>\u001b[39m\n          \u001b[36m</p>\u001b[39m\n        \u001b[36m</div>\u001b[39m\n        \u001b[36m<form\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"mt-8 space-y-6\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[36m<div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"space-y-4\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"name\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mFull Name\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"name\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"name\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"email\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mEmail address\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"email\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"email\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mPassword\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"password\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"password\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"w-full flex flex-col space-y-1.5\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<label\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"text-sm font-medium text-text-primary\"\u001b[39m\n                \u001b[33mfor\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mConfirm Password\u001b[0m\n              \u001b[36m</label>\u001b[39m\n              \u001b[36m<input\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"flex h-11 w-full rounded-md border border-border bg-surface-2 px-3 py-2 text-sm text-text-primary file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50 transition-colors\"\u001b[39m\n                \u001b[33mid\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n                \u001b[33mname\u001b[39m=\u001b[32m\"confirmPassword\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"password\"\u001b[39m\n              \u001b[36m/>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n          \u001b[36m</div>\u001b[39m\n          \u001b[36m<button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"inline-flex items-center justify-center rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-primary text-white hover:bg-opacity-90 shadow-warm focus:ring-primary h-11 px-6 text-base w-full\"\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\"submit\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0mSign Up\u001b[0m\n          \u001b[36m</button>\u001b[39m\n        \u001b[36m</form>\u001b[39m\n      \u001b[36m</div>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at Object.getElementError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\config.js:37:19)\n    at getElementError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:20:35)\n    at getMultipleElementsFoundError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:23:10)\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:55:13\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:95:19\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/auth.test.jsx:80:30\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:20"],"meta":{},"tags":[]}],"startTime":1774955644014,"endTime":1774955648221.3196,"status":"failed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/auth.test.jsx"},{"assertionResults":[{"ancestorTitles":["Auth Guards"],"fullName":"Auth Guards /vendor/* routes redirect to / if authenticated as customer","status":"passed","title":"/vendor/* routes redirect to / if authenticated as customer","duration":211.01820000000043,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Auth Guards"],"fullName":"Auth Guards /vendor/* routes render for vendors perfectly","status":"passed","title":"/vendor/* routes render for vendors perfectly","duration":104.11399999999958,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Auth Guards"],"fullName":"Auth Guards /vendor/* routes redirect to /auth/login if not authenticated","status":"passed","title":"/vendor/* routes redirect to /auth/login if not authenticated","duration":13.86330000000089,"failureMessages":[],"meta":{},"tags":[]}],"startTime":1774955643494,"endTime":1774955643823.8633,"status":"passed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/authGuard.test.jsx"},{"assertionResults":[{"ancestorTitles":["Cart Drawer Components"],"fullName":"Cart Drawer Components Hidden by default when isOpen is false","status":"passed","title":"Hidden by default when isOpen is false","duration":173.78369999999995,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Cart Drawer Components"],"fullName":"Cart Drawer Components Opens and Shows cart items with images and prices","status":"passed","title":"Opens and Shows cart items with images and prices","duration":148.1340999999993,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Cart Drawer Components"],"fullName":"Cart Drawer Components Quantity increase/decrease buttons exist","status":"passed","title":"Quantity increase/decrease buttons exist","duration":806.8956999999991,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Cart Drawer Components"],"fullName":"Cart Drawer Components Delete button renders (trash icon context)","status":"passed","title":"Delete button renders (trash icon context)","duration":66.99150000000009,"failureMessages":[],"meta":{},"tags":[]}],"startTime":1774955644699,"endTime":1774955645894.9915,"status":"passed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/cart.test.jsx"},{"assertionResults":[{"ancestorTitles":["Explore Page Components"],"fullName":"Explore Page Components Search bar renders and accepts input","status":"passed","title":"Search bar renders and accepts input","duration":1120.7842999999993,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Explore Page Components"],"fullName":"Explore Page Components Debounced search does not trigger immediately (mocked timers)","status":"failed","title":"Debounced search does not trigger immediately (mocked timers)","duration":5019.6409,"failureMessages":["Error: STACK_TRACE_ERROR\n    at task (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1774:27)\n    at Object.<anonymous> (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1807:16)\n    at Object.<anonymous> (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1553:28)\n    at chain (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:589:14)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/explore.test.jsx:30:3\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1879:40\n    at runWithSuite (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2248:8)\n    at Object.collect (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1879:10)\n    at Object.collect (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1883:54)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"],"meta":{},"tags":[]},{"ancestorTitles":["Explore Page Components"],"fullName":"Explore Page Components Category pills render all categories and click filters","status":"failed","title":"Category pills render all categories and click filters","duration":5012.684800000001,"failureMessages":["Error: STACK_TRACE_ERROR\n    at task (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1774:27)\n    at Object.<anonymous> (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1807:16)\n    at Object.<anonymous> (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1553:28)\n    at chain (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:589:14)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/explore.test.jsx:59:3\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1879:40\n    at runWithSuite (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2248:8)\n    at Object.collect (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1879:10)\n    at Object.collect (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1883:54)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"],"meta":{},"tags":[]},{"ancestorTitles":["Explore Page Components"],"fullName":"Explore Page Components Masonry grid renders products empty state logic","status":"failed","title":"Masonry grid renders products empty state logic","duration":5009.8483000000015,"failureMessages":["Error: STACK_TRACE_ERROR\n    at task (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1774:27)\n    at Object.<anonymous> (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1807:16)\n    at Object.<anonymous> (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1553:28)\n    at chain (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:589:14)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/explore.test.jsx:72:3\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1879:40\n    at runWithSuite (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2248:8)\n    at Object.collect (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1879:10)\n    at Object.collect (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1883:54)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"],"meta":{},"tags":[]}],"startTime":1774955644958,"endTime":1774955661120.8484,"status":"failed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/explore.test.jsx"},{"assertionResults":[{"ancestorTitles":["Feed Components","ProductFeedCard (PostCard)"],"fullName":"Feed Components ProductFeedCard (PostCard) Renders vendor avatar and shop name","status":"failed","title":"Renders vendor avatar and shop name","duration":220.58940000000075,"failureMessages":["ReferenceError: IntersectionObserver is not defined\n    at initIntersectionObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)\n    at observeIntersection (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)\n    at InViewFeature.startObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)\n    at InViewFeature.mount (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)\n    at HTMLVisualElement.updateFeatures (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/render/VisualElement.mjs:262:29)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/utils/use-visual-element.mjs:70:23\n    at commitHookEffectListMount (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitLayoutEffectOnFiber (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23312:15)\n    at commitLayoutMountEffects_complete (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24727:9)\n    at commitLayoutEffects_begin (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24713:7)"],"meta":{},"tags":[]},{"ancestorTitles":["Feed Components","ProductFeedCard (PostCard)"],"fullName":"Feed Components ProductFeedCard (PostCard) Renders price formatted correctly","status":"failed","title":"Renders price formatted correctly","duration":52.01290000000154,"failureMessages":["ReferenceError: IntersectionObserver is not defined\n    at initIntersectionObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)\n    at observeIntersection (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)\n    at InViewFeature.startObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)\n    at InViewFeature.mount (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)\n    at HTMLVisualElement.updateFeatures (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/render/VisualElement.mjs:262:29)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/utils/use-visual-element.mjs:70:23\n    at commitHookEffectListMount (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitLayoutEffectOnFiber (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23312:15)\n    at commitLayoutMountEffects_complete (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24727:9)\n    at commitLayoutEffects_begin (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24713:7)"],"meta":{},"tags":[]},{"ancestorTitles":["Feed Components","ProductFeedCard (PostCard)"],"fullName":"Feed Components ProductFeedCard (PostCard) Heart button toggles liked state on click","status":"failed","title":"Heart button toggles liked state on click","duration":37.696099999999205,"failureMessages":["ReferenceError: IntersectionObserver is not defined\n    at initIntersectionObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)\n    at observeIntersection (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)\n    at InViewFeature.startObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)\n    at InViewFeature.mount (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)\n    at HTMLVisualElement.updateFeatures (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/render/VisualElement.mjs:262:29)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/utils/use-visual-element.mjs:70:23\n    at commitHookEffectListMount (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitLayoutEffectOnFiber (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23312:15)\n    at commitLayoutMountEffects_complete (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24727:9)\n    at commitLayoutEffects_begin (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24713:7)"],"meta":{},"tags":[]},{"ancestorTitles":["Feed Components","ProductFeedCard (PostCard)"],"fullName":"Feed Components ProductFeedCard (PostCard) Add to Cart button renders","status":"failed","title":"Add to Cart button renders","duration":76.72539999999935,"failureMessages":["ReferenceError: IntersectionObserver is not defined\n    at initIntersectionObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:35:34)\n    at observeIntersection (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs:40:39)\n    at InViewFeature.startObserver (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:52:16)\n    at InViewFeature.mount (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs:55:14)\n    at HTMLVisualElement.updateFeatures (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/render/VisualElement.mjs:262:29)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/framer-motion/dist/es/motion/utils/use-visual-element.mjs:70:23\n    at commitHookEffectListMount (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitLayoutEffectOnFiber (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23312:15)\n    at commitLayoutMountEffects_complete (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24727:9)\n    at commitLayoutEffects_begin (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24713:7)"],"meta":{},"tags":[]},{"ancestorTitles":["Feed Components","InfiniteFeed (Home Page)"],"fullName":"Feed Components InfiniteFeed (Home Page) Shows content loading / skeleton or renders list after MSW returns","status":"failed","title":"Shows content loading / skeleton or renders list after MSW returns","duration":340.5529999999999,"failureMessages":["ReferenceError: IntersectionObserver is not defined\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/src/pages/customer/Home.jsx:26:22\n    at commitHookEffectListMount (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\react\\cjs\\react.development.js:2667:24)"],"meta":{},"tags":[]}],"startTime":1774955645313,"endTime":1774955646045.553,"status":"failed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/feed.test.jsx"},{"assertionResults":[{"ancestorTitles":["Product Detail Page"],"fullName":"Product Detail Page Page renders with product data from API","status":"failed","title":"Page renders with product data from API","duration":1163.2880999999998,"failureMessages":["Error: Unable to find an element with the text: Sofa A. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-screen bg-[var(--surface-2)] animate-pulse\"\u001b[39m\n    \u001b[36m/>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at Proxy.waitForWrapper (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\wait-for.js:163:27)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/productDetail.test.jsx:31:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:26\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2316:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2313:10)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2295:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2262:10)"],"meta":{},"tags":[]},{"ancestorTitles":["Product Detail Page"],"fullName":"Product Detail Page Quantity +/- buttons work dynamically (local state bounds)","status":"failed","title":"Quantity +/- buttons work dynamically (local state bounds)","duration":1034.4243999999999,"failureMessages":["Error: Unable to find an element with the text: Sofa A. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-screen bg-[var(--surface-2)] animate-pulse\"\u001b[39m\n    \u001b[36m/>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at Proxy.waitForWrapper (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\wait-for.js:163:27)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/productDetail.test.jsx:41:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:26\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2316:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2313:10)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2295:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2262:10)"],"meta":{},"tags":[]},{"ancestorTitles":["Product Detail Page"],"fullName":"Product Detail Page Add to Cart triggers success logic","status":"failed","title":"Add to Cart triggers success logic","duration":1022.2255000000005,"failureMessages":["Error: Unable to find an element with the text: Sofa A. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-screen bg-[var(--surface-2)] animate-pulse\"\u001b[39m\n    \u001b[36m/>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at Proxy.waitForWrapper (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\wait-for.js:163:27)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/productDetail.test.jsx:63:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:26\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2316:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2313:10)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2295:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2262:10)"],"meta":{},"tags":[]}],"startTime":1774955645151,"endTime":1774955648371.2256,"status":"failed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/productDetail.test.jsx"},{"assertionResults":[{"ancestorTitles":["Zustand Global Stores","authStore"],"fullName":"Zustand Global Stores authStore Initial state: user null, accessToken null","status":"passed","title":"Initial state: user null, accessToken null","duration":6.515700000000834,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Zustand Global Stores","authStore"],"fullName":"Zustand Global Stores authStore login() sets user and accessToken precisely","status":"passed","title":"login() sets user and accessToken precisely","duration":3.5707000000002154,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Zustand Global Stores","authStore"],"fullName":"Zustand Global Stores authStore logout() clears user and accessToken immediately","status":"passed","title":"logout() clears user and accessToken immediately","duration":3.1050999999997657,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Zustand Global Stores","cartStore"],"fullName":"Zustand Global Stores cartStore Initial state: empty items array, count 0, total 0","status":"passed","title":"Initial state: empty items array, count 0, total 0","duration":1.339799999999741,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Zustand Global Stores","cartStore"],"fullName":"Zustand Global Stores cartStore cartCount computed correctly as sum of all quantities","status":"passed","title":"cartCount computed correctly as sum of all quantities","duration":0.6474000000007436,"failureMessages":[],"meta":{},"tags":[]},{"ancestorTitles":["Zustand Global Stores","cartStore"],"fullName":"Zustand Global Stores cartStore cartTotal computed correctly mathematically without discounts","status":"passed","title":"cartTotal computed correctly mathematically without discounts","duration":0.4359999999996944,"failureMessages":[],"meta":{},"tags":[]}],"startTime":1774955650851,"endTime":1774955650868.436,"status":"passed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/stores.test.js"},{"assertionResults":[{"ancestorTitles":["Vendor Dashboard Components","AddProductForm / Dashboard Render"],"fullName":"Vendor Dashboard Components AddProductForm / Dashboard Render Dashboard loads successfully with stat cards","status":"failed","title":"Dashboard loads successfully with stat cards","duration":1153.744999999999,"failureMessages":["Error: Unable to find an element with the text: /Total Revenue/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-screen bg-surface flex items-center justify-center\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<svg\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"lucide lucide-loader-circle animate-spin text-primary\"\u001b[39m\n        \u001b[33mfill\u001b[39m=\u001b[32m\"none\"\u001b[39m\n        \u001b[33mheight\u001b[39m=\u001b[32m\"40\"\u001b[39m\n        \u001b[33mstroke\u001b[39m=\u001b[32m\"currentColor\"\u001b[39m\n        \u001b[33mstroke-linecap\u001b[39m=\u001b[32m\"round\"\u001b[39m\n        \u001b[33mstroke-linejoin\u001b[39m=\u001b[32m\"round\"\u001b[39m\n        \u001b[33mstroke-width\u001b[39m=\u001b[32m\"2\"\u001b[39m\n        \u001b[33mviewBox\u001b[39m=\u001b[32m\"0 0 24 24\"\u001b[39m\n        \u001b[33mwidth\u001b[39m=\u001b[32m\"40\"\u001b[39m\n        \u001b[33mxmlns\u001b[39m=\u001b[32m\"http://www.w3.org/2000/svg\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[36m<path\u001b[39m\n          \u001b[33md\u001b[39m=\u001b[32m\"M21 12a9 9 0 1 1-6.219-8.56\"\u001b[39m\n        \u001b[36m/>\u001b[39m\n      \u001b[36m</svg>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at waitForWrapper (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\wait-for.js:163:27)\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/vendor.test.jsx:25:13\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:26\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2316:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2313:10)\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2295:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2262:10)"],"meta":{},"tags":[]},{"ancestorTitles":["Vendor Dashboard Components","VendorOrdersTable"],"fullName":"Vendor Dashboard Components VendorOrdersTable Renders orders in table layout","status":"failed","title":"Renders orders in table layout","duration":613.5048999999999,"failureMessages":["TestingLibraryElementError: Unable to find an accessible element with the role \"table\"\n\nThere are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"min-h-screen bg-surface flex items-center justify-center\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<svg\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"lucide lucide-loader-circle animate-spin text-primary\"\u001b[39m\n        \u001b[33mfill\u001b[39m=\u001b[32m\"none\"\u001b[39m\n        \u001b[33mheight\u001b[39m=\u001b[32m\"40\"\u001b[39m\n        \u001b[33mstroke\u001b[39m=\u001b[32m\"currentColor\"\u001b[39m\n        \u001b[33mstroke-linecap\u001b[39m=\u001b[32m\"round\"\u001b[39m\n        \u001b[33mstroke-linejoin\u001b[39m=\u001b[32m\"round\"\u001b[39m\n        \u001b[33mstroke-width\u001b[39m=\u001b[32m\"2\"\u001b[39m\n        \u001b[33mviewBox\u001b[39m=\u001b[32m\"0 0 24 24\"\u001b[39m\n        \u001b[33mwidth\u001b[39m=\u001b[32m\"40\"\u001b[39m\n        \u001b[33mxmlns\u001b[39m=\u001b[32m\"http://www.w3.org/2000/svg\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[36m<path\u001b[39m\n          \u001b[33md\u001b[39m=\u001b[32m\"M21 12a9 9 0 1 1-6.219-8.56\"\u001b[39m\n        \u001b[36m/>\u001b[39m\n      \u001b[36m</svg>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m\n    at Object.getElementError (C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\config.js:37:19)\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:76:38\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:52:17\n    at C:\\Users\\syeda\\Desktop\\projects\\furnihub\\frontend\\node_modules\\@testing-library\\dom\\dist\\query-helpers.js:95:19\n    at C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/vendor.test.jsx:37:21\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:26\n    at file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2316:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///C:/Users/syeda/Desktop/projects/furnihub/frontend/node_modules/@vitest/runner/dist/chunk-artifact.js:2313:10)"],"meta":{},"tags":[]},{"ancestorTitles":["Vendor Dashboard Components","VendorOrdersTable"],"fullName":"Vendor Dashboard Components VendorOrdersTable Filter tabs (All/Pending/Processing/Shipped/Delivered) filter correctly","status":"passed","title":"Filter tabs (All/Pending/Processing/Shipped/Delivered) filter correctly","duration":23.330700000000434,"failureMessages":[],"meta":{},"tags":[]}],"startTime":1774955645075,"endTime":1774955646866.3308,"status":"failed","message":"","name":"C:/Users/syeda/Desktop/projects/furnihub/frontend/tests/frontend/vendor.test.jsx"}]}

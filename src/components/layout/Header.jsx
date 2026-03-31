@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[var(--surface-2)]/95 backdrop-blur-md border-b border-[var(--border)] h-14 flex items-center justify-between px-4 md:px-8">
-      <Link to="/" className="font-serif text-2xl font-bold tracking-tight text-[var(--primary)]">
+      <Link to="/" className="font-serif text-2xl font-bold tracking-tight text-[var(--primary)] md:hidden">
         FurniHub
       </Link>
       <div className="flex items-center space-x-5">
