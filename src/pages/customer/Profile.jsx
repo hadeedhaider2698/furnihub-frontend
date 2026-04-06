@@ -12,8 +12,10 @@ import {
   ChevronLeft,
   Edit2,
   User,
-  Users
+  Users,
+  MessageSquare
 } from 'lucide-react';
+import { Button } from '../../components/ui/Button.jsx';
 import api from '../../services/api.js';
 import { useAuthStore } from '../../store/authStore.js';
 import { useWishlistStore } from '../../store/wishlistStore.js';
@@ -62,6 +64,7 @@ export default function Profile() {
     { id: 'saved', label: 'Saved', icon: Bookmark },
     { id: 'following', label: 'Following', icon: Users },
     { id: 'orders', label: 'Orders', icon: ShoppingBag },
+    { id: 'messages', label: 'Messages', icon: MessageSquare },
     { id: 'about', label: 'About', icon: User },
   ];
 
@@ -75,9 +78,14 @@ export default function Profile() {
         <span className="font-bold text-lg tracking-tight text-[var(--primary)] uppercase">
           {user.name}
         </span>
-        <Link to="/profile/edit" className="p-1 hover:bg-[var(--surface-2)] rounded-full transition-colors">
-          <Settings size={22} />
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link to="/messages" className="p-1 hover:bg-[var(--surface-2)] rounded-full transition-colors">
+            <MessageSquare size={22} />
+          </Link>
+          <Link to="/profile/edit" className="p-1 hover:bg-[var(--surface-2)] rounded-full transition-colors">
+            <Settings size={22} />
+          </Link>
+        </div>
       </div>
 
       <div className="lg:max-w-[800px] lg:mx-auto">
@@ -267,6 +275,22 @@ export default function Profile() {
                     <Link to="/explore" className="text-[var(--accent)] text-sm font-bold hover:underline">Start shopping</Link>
                   </div>
                 )}
+              </motion.div>
+            )}
+
+            {activeTab === 'messages' && (
+              <motion.div key="messages" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="p-4">
+                <div className="bg-[var(--surface-2)] rounded-2xl p-8 text-center border border-[var(--border)] shadow-sm">
+                  <MessageSquare size={48} className="mx-auto mb-4 opacity-20 text-[var(--primary)]" />
+                  <h3 className="font-bold text-[var(--primary)] text-lg mb-2">Your Conversations</h3>
+                  <p className="text-sm text-[var(--text-secondary)] mb-6">Manage all your chats with vendors in one place.</p>
+                  <Button 
+                    onClick={() => navigate('/messages')}
+                    className="w-full bg-[var(--primary)] text-white font-bold py-3 rounded-xl shadow-lg active:scale-95 transition-all"
+                  >
+                    Open Messages Portal
+                  </Button>
+                </div>
               </motion.div>
             )}
 

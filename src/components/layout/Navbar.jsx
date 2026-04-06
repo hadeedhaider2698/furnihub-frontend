@@ -1,13 +1,17 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingBag, User, Menu, Search, X, Store, LayoutDashboard, PlusCircle } from 'lucide-react';
+import { ShoppingBag, User, Menu, Search, X, Store, LayoutDashboard, PlusCircle, MessageCircle } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore.js';
 import { useCartStore } from '../../store/cartStore.js';
 import { useUiStore } from '../../store/uiStore.js';
-import { useState } from 'react';
+import { useChatStore } from '../../store/chatStore.js';
+import { useState, useEffect } from 'react';
+import NotificationBell from './NotificationBell.jsx';
 
 export default function Navbar() {
   const { user, logout } = useAuthStore();
   const cartCount = useCartStore(state => state.cartCount());
+  const { fetchConversations, unreadCount } = useChatStore();
+  const unreadMessages = unreadCount();
   const { toggleCart, isMobileMenuOpen, toggleMobileMenu } = useUiStore();
   const navigate = useNavigate();
   const [search, setSearch] = useState('');
@@ -24,6 +28,12 @@ export default function Navbar() {
     await logout();
     navigate('/auth/login');
   };
+
+  useEffect(() => {
+    if (user) {
+      fetchConversations();
+    }
+  }, [user, fetchConversations]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-surface-2/80 backdrop-blur supports-[backdrop-filter]:bg-surface-2/60">
@@ -76,42 +86,55 @@ export default function Navbar() {
           </form>
 
           {user ? (
-            <div className="group relative cursor-pointer">
-              <div className="flex items-center gap-2">
-                <img 
-                  src={user.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user.name}`}
-                  alt={user.name}
-                  className="w-8 h-8 rounded-full border-2 border-border object-cover"
-                />
-              </div>
-              <div className="absolute right-0 top-full mt-2 w-52 rounded-xl bg-surface-2 shadow-warm-lg py-2 hidden group-hover:block border border-border">
-                <div className="px-4 py-3 border-b border-border mb-1">
-                  <p className="text-sm font-bold text-primary truncate">{user.name}</p>
-                  <p className="text-xs text-text-secondary capitalize">{user.role}</p>
+            <>
+              <div className="group relative cursor-pointer">
+                <div className="flex items-center gap-2">
+                  <img 
+                    src={user.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user.name}`}
+                    alt={user.name}
+                    className="w-8 h-8 rounded-full border-2 border-border object-cover"
+                  />
                 </div>
-                {isAdmin && <Link to="/admin/dashboard" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">Admin Dashboard</Link>}
-                {isVendor && (
-                  <>
-                    <Link to="/vendor/dashboard" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">
-                      <LayoutDashboard size={15} /> Dashboard
-                    </Link>
-                    <Link to="/vendor/settings" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">
-                      <Store size={15} /> My Store
-                    </Link>
-                    <Link to="/vendor/products/new" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">
-                      <PlusCircle size={15} /> Create Product
-                    </Link>
-                  </>
-                )}
-                {!isVendor && !isAdmin && (
-                  <>
-                    <Link to="/profile" className="block px-4 py-2 text-sm text-text-primary hover:bg-surface">My Profile</Link>
-                    <Link to="/orders" className="block px-4 py-2 text-sm text-text-primary hover:bg-surface">My Orders</Link>
-                  </>
-                )}
-                <button onClick={handleLogout} className="block w-full text-left px-4 py-2 text-sm text-error hover:bg-surface border-t border-border mt-1">Logout</button>
+                <div className="absolute right-0 top-full mt-2 w-52 rounded-xl bg-surface-2 shadow-warm-lg py-2 hidden group-hover:block border border-border">
+                  <div className="px-4 py-3 border-b border-border mb-1">
+                    <p className="text-sm font-bold text-primary truncate">{user.name}</p>
+                    <p className="text-xs text-text-secondary capitalize">{user.role}</p>
+                  </div>
+                  {isAdmin && <Link to="/admin/dashboard" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">Admin Dashboard</Link>}
+                  {isVendor && (
+                    <>
+                      <Link to="/vendor/dashboard" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">
+                        <LayoutDashboard size={15} /> Dashboard
+                      </Link>
+                      <Link to="/vendor/settings" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">
+                        <Store size={15} /> My Store
+                      </Link>
+                      <Link to="/vendor/products/new" className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-surface">
+                        <PlusCircle size={15} /> Create Product
+                      </Link>
+                    </>
+                  )}
+                  {!isVendor && !isAdmin && (
+                    <>
+                      <Link to="/profile" className="block px-4 py-2 text-sm text-text-primary hover:bg-surface">My Profile</Link>
+                      <Link to="/orders" className="block px-4 py-2 text-sm text-text-primary hover:bg-surface">My Orders</Link>
+                    </>
+                  )}
+                  <button onClick={handleLogout} className="block w-full text-left px-4 py-2 text-sm text-error hover:bg-surface border-t border-border mt-1">Logout</button>
+                </div>
               </div>
-            </div>
+              
+            <NotificationBell />
+            
+            <Link to="/messages" className="p-2 text-primary hover:bg-surface-2 rounded-full transition-colors relative group cursor-pointer block">
+              <MessageCircle size={24} />
+              {unreadMessages > 0 && (
+                <span className="absolute top-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-white ring-2 ring-surface">
+                  {unreadMessages > 9 ? '9+' : unreadMessages}
+                </span>
+              )}
+            </Link>
+          </>
           ) : (
             <div className="hidden md:flex items-center gap-3">
               <Link to="/auth/login" className="text-sm font-medium text-text-primary hover:text-accent transition-colors">Log In</Link>

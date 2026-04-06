@@ -14,35 +14,51 @@ import { Loader } from '../../components/ui/Loader.jsx';
 // Initialize stripe (using a dummy key for UI rendering purposes if env var missing)
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUB_KEY || 'pk_test_dummy');
 
-const CheckoutForm = ({ shippingAddress, onSuccess }) => {
+const CheckoutForm = ({ shippingAddress, selectedMethod, onSuccess }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [isProcessing, setIsProcessing] = useState(false);
-  const { clearCart } = useCartStore();
+  const { clearCart, items } = useCartStore();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!stripe || !elements) return;
+    
+    if (selectedMethod === 'stripe' && (!stripe || !elements)) return;
 
     setIsProcessing(true);
 
     try {
-      // 1. Create order and get client secret from backend
-      const { data } = await api.post('/orders/checkout', {
-        shippingAddress
+      // 1. Create the order first.
+      const formattedItems = items.map(i => ({ product: i.product._id, quantity: i.quantity, color: i.color }));
+      const { data: orderData } = await api.post('/orders', {
+        items: formattedItems,
+        shippingAddress,
+        paymentMethod: selectedMethod
       });
 
-      const clientSecret = data.data.clientSecret;
-      
-      if (!clientSecret) {
-        // If Stripe isn't fully configured in backend, simulate success for test mode
-        toast.success('Order placed successfully (Test Mode)');
+      const order = orderData.data.order;
+
+      if (selectedMethod === 'cod') {
+        toast.success('Order placed successfully via Cash on Delivery!');
         await clearCart();
         onSuccess();
         return;
       }
 
-      // 2. Confirm payment with Stripe
+      // 2. If Stripe, get Payment Intent
+      const { data: intentData } = await api.post('/orders/payment/intent', {
+        orderId: order._id
+      });
+      const clientSecret = intentData.data.clientSecret;
+
+      if (!clientSecret) {
+        toast.success('Order placed (Test Mode)');
+        await clearCart();
+        onSuccess();
+        return;
+      }
+
+      // 3. Confirm stripe payment
       const result = await stripe.confirmCardPayment(clientSecret, {
         payment_method: {
           card: elements.getElement(CardElement),
@@ -67,20 +83,29 @@ const CheckoutForm = ({ shippingAddress, onSuccess }) => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="p-4 border border-border rounded-md bg-surface">
-        <CardElement options={{
-          style: {
-            base: {
-              fontSize: '16px',
-              color: '#1A1A2E',
-              '::placeholder': { color: '#888888' },
+      {selectedMethod === 'stripe' && (
+        <div className="p-4 border border-border rounded-md bg-surface">
+          <CardElement options={{
+            style: {
+              base: {
+                fontSize: '16px',
+                color: '#1A1A2E',
+                '::placeholder': { color: '#888888' },
+              },
+              invalid: { color: '#D9534F' },
             },
-            invalid: { color: '#D9534F' },
-          },
-        }} />
-      </div>
-      <Button type="submit" className="w-full" disabled={!stripe || isProcessing} isLoading={isProcessing}>
-        Pay Now
+          }} />
+        </div>
+      )}
+      
+      {selectedMethod === 'cod' && (
+        <div className="p-4 bg-surface-2 border border-border rounded-md">
+          <p className="text-text-secondary">You will pay in cash upon delivery of your order.</p>
+        </div>
+      )}
+
+      <Button type="submit" className="w-full" disabled={isProcessing} isLoading={isProcessing}>
+        Place Order
       </Button>
     </form>
   );
@@ -91,6 +116,7 @@ export default function Checkout() {
   const { items, cartTotal } = useCartStore();
   const [step, setStep] = useState(1);
   const [shippingAddress, setShippingAddress] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState('stripe');
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -131,11 +157,26 @@ export default function Checkout() {
           ) : (
             <div className="bg-surface-2 p-8 rounded-xl border border-border shadow-warm">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-serif font-bold text-primary">Payment</h2>
+                <h2 className="text-2xl font-serif font-bold text-primary">Payment & Confirmation</h2>
                 <button onClick={() => setStep(1)} className="text-sm text-accent hover:underline">Edit shipping</button>
               </div>
+
+              <div className="mb-6 space-y-4">
+                <p className="font-medium">Select Payment Method:</p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <label className={`flex-1 p-4 border rounded-lg cursor-pointer transition-all ${paymentMethod === 'stripe' ? 'border-primary ring-1 ring-primary bg-primary/5' : 'border-border hover:bg-surface'}`}>
+                    <input type="radio" name="payment" className="hidden" checked={paymentMethod === 'stripe'} onChange={() => setPaymentMethod('stripe')} />
+                    <span className="font-medium text-primary">Credit / Debit Card</span>
+                  </label>
+                  <label className={`flex-1 p-4 border rounded-lg cursor-pointer transition-all ${paymentMethod === 'cod' ? 'border-primary ring-1 ring-primary bg-primary/5' : 'border-border hover:bg-surface'}`}>
+                    <input type="radio" name="payment" className="hidden" checked={paymentMethod === 'cod'} onChange={() => setPaymentMethod('cod')} />
+                    <span className="font-medium text-primary">Cash on Delivery</span>
+                  </label>
+                </div>
+              </div>
+
               <Elements stripe={stripePromise}>
-                <CheckoutForm shippingAddress={shippingAddress} onSuccess={() => navigate('/orders')} />
+                <CheckoutForm shippingAddress={shippingAddress} selectedMethod={paymentMethod} onSuccess={() => navigate('/orders')} />
               </Elements>
             </div>
           )}

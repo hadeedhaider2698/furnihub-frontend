@@ -12,6 +12,7 @@ import { useCartStore } from '../../store/cartStore.js';
 import { useAuthStore } from '../../store/authStore.js';
 import { useWishlistStore } from '../../store/wishlistStore.js';
 import { useFollowStore } from '../../store/followStore.js';
+import { useChatStore } from '../../store/chatStore.js';
 import toast from 'react-hot-toast';
 
 const fetchProduct = async (slug) => {
@@ -73,6 +74,7 @@ export default function ProductDetail() {
   const { user } = useAuthStore();
   const { toggleWishlist, isInWishlist } = useWishlistStore();
   const { toggleFollow, isFollowing } = useFollowStore();
+  const { sendMessage } = useChatStore();
   
   const [currentImg, setCurrentImg] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
@@ -139,6 +141,25 @@ export default function ProductDetail() {
       toast.success(saved ? 'Saved to wishlist' : 'Removed from wishlist');
     } catch (error) {
       toast.error('Failed to update wishlist');
+    }
+  };
+
+  const handleChatWithVendor = async () => {
+    if (!user) return navigate('/auth/login');
+    if (!product?.vendor) return toast.error('Vendor information missing');
+    
+    try {
+      // We don't necessarily need to send a message to start a chat, 
+      // but we need to ensure a chat exists or just navigate to messages 
+      // and let the user start typing. 
+      // Our sendMessage flow handle chat creation too.
+      // Let's just navigate to /messages and we can pass the vendor ID.
+      // Or better, trigger a dummy message or just a "Chat" action.
+      // For simplicity, let's navigate to /messages.
+      // I'll update Messages.jsx to handle a vendorId query param if needed.
+    navigate(`/messages?vendorId=${product.vendor.userId}&productId=${product._id}&productTitle=${encodeURIComponent(product.title)}`);
+    } catch (error) {
+      toast.error('Failed to start chat');
     }
   };
 
@@ -289,10 +310,14 @@ export default function ProductDetail() {
           </div>
 
           {/* Desktop Buy Button */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block space-y-4">
             <button onClick={handleAddToCart} disabled={product.stock <= 0} className="w-full bg-[var(--primary)] text-white font-bold py-5 rounded-2xl shadow-2xl active:scale-[0.98] transition-all disabled:opacity-50 text-xl flex items-center justify-center hover:bg-[var(--primary-dark)]">
               <ShoppingBag size={24} className="mr-3" />
               {product.stock > 0 ? 'Add to Bag' : 'Out of Stock'}
+            </button>
+            <button onClick={handleChatWithVendor} className="w-full bg-white border-2 border-[var(--primary)] text-[var(--primary)] font-bold py-4 rounded-2xl active:scale-[0.98] transition-all text-lg flex items-center justify-center hover:bg-[var(--primary)] hover:text-white group">
+              <MessageCircle size={22} className="mr-3 text-[var(--primary)] group-hover:text-white" />
+              Chat with Vendor
             </button>
             <p className="text-center text-[var(--text-secondary)] text-sm mt-4">Free standard shipping on this item.</p>
           </div>
@@ -300,8 +325,11 @@ export default function ProductDetail() {
       </div>
 
       {/* Mobile-Only Sticky Action Bar */}
-      <div className="flex-none p-4 pb-[max(1rem,env(safe-area-inset-bottom))] border-t border-[var(--border)] bg-[var(--surface-2)]/95 backdrop-blur-md z-50 w-full shadow-[0_-4px_20px_rgba(0,0,0,0.05)] lg:hidden">
-        <button onClick={handleAddToCart} disabled={product.stock <= 0} className="w-full bg-[var(--primary)] text-white font-bold py-4 rounded-xl shadow-warm active:scale-95 transition-transform disabled:opacity-50 text-base flex items-center justify-center">
+      <div className="flex-none p-4 pb-[max(1rem,env(safe-area-inset-bottom))] border-t border-[var(--border)] bg-[var(--surface-2)]/95 backdrop-blur-md z-50 w-full shadow-[0_-4px_20px_rgba(0,0,0,0.05)] lg:hidden flex gap-3">
+        <button onClick={handleChatWithVendor} className="p-4 bg-white border border-[var(--border)] text-[var(--primary)] rounded-xl active:scale-95 transition-transform flex items-center justify-center">
+          <MessageCircle size={24} />
+        </button>
+        <button onClick={handleAddToCart} disabled={product.stock <= 0} className="flex-1 bg-[var(--primary)] text-white font-bold py-4 rounded-xl shadow-warm active:scale-95 transition-transform disabled:opacity-50 text-base flex items-center justify-center">
           <ShoppingBag size={20} className="mr-2" />
           {product.stock > 0 ? 'Add to Bag' : 'Out of Stock'}
         </button>

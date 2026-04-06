@@ -19,6 +19,7 @@ import CreateProduct from './pages/vendor/CreateProduct.jsx'
 import EditProduct from './pages/vendor/EditProduct.jsx'
 import Profile from './pages/customer/Profile.jsx'
 import EditProfile from './pages/customer/EditProfile.jsx'
+import Messages from './pages/customer/Messages.jsx'
 import AdminDashboard from './pages/admin/AdminDashboard.jsx'
 
 import { useEffect } from 'react'
@@ -26,12 +27,14 @@ import { useAuthStore } from './store/authStore.js'
 import { useCartStore } from './store/cartStore.js'
 import { useWishlistStore } from './store/wishlistStore.js'
 import { useFollowStore } from './store/followStore.js'
+import { useSocketStore } from './store/socketStore.js'
 
 export default function App() {
   const { checkAuth, user } = useAuthStore();
   const { fetchCart } = useCartStore();
   const { fetchWishlist } = useWishlistStore();
   const { fetchFollowing } = useFollowStore();
+  const { connect, disconnect } = useSocketStore();
 
   useEffect(() => {
     const initApp = async () => {
@@ -45,8 +48,11 @@ export default function App() {
       fetchCart();
       fetchWishlist();
       fetchFollowing();
+      connect();
+    } else {
+      disconnect();
     }
-  }, [user, fetchCart, fetchWishlist, fetchFollowing]);
+  }, [user, fetchCart, fetchWishlist, fetchFollowing, connect, disconnect]);
 
   return (
     <BrowserRouter>
@@ -63,26 +69,26 @@ export default function App() {
           <Route path="orders" element={<Orders />} />
           <Route path="profile" element={<Profile />} />
           <Route path="profile/edit" element={<EditProfile />} />
+          <Route path="messages" element={<Messages />} />
           <Route path="auth/login" element={<Login />} />
           <Route path="auth/register" element={<Register />} />
         </Route>
         
-        <Route path="/" element={<MainLayout />}>
-          <Route path="vendor" element={<DashboardLayout expectedRole="vendor" />}>
-            <Route path="dashboard" element={<VendorDashboard />} />
-            <Route path="products" element={<VendorProducts />} />
-            <Route path="products/new" element={<CreateProduct />} />
-            <Route path="products/edit/:id" element={<EditProduct />} />
-            <Route path="orders" element={<VendorOrders />} />
-            <Route path="settings" element={<VendorSettings />} />
-          </Route>
-          
-          <Route path="admin" element={<DashboardLayout expectedRole="admin" />}>
-            <Route path="dashboard" element={<AdminDashboard />} />
-            <Route path="users" element={<div className="text-xl p-8">Manage Users (Coming Soon)</div>} />
-            <Route path="vendors" element={<div className="text-xl p-8">Manage Vendors (Coming Soon)</div>} />
-            <Route path="products" element={<div className="text-xl p-8">Manage Products (Coming Soon)</div>} />
-          </Route>
+        {/* Dashboards - Separate from MainLayout to avoid double headers */}
+        <Route path="/vendor" element={<DashboardLayout expectedRole="vendor" />}>
+          <Route path="dashboard" element={<VendorDashboard />} />
+          <Route path="products" element={<VendorProducts />} />
+          <Route path="products/new" element={<CreateProduct />} />
+          <Route path="products/edit/:id" element={<EditProduct />} />
+          <Route path="orders" element={<VendorOrders />} />
+          <Route path="settings" element={<VendorSettings />} />
+        </Route>
+        
+        <Route path="/admin" element={<DashboardLayout expectedRole="admin" />}>
+          <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="users" element={<div className="text-xl p-8">Manage Users (Coming Soon)</div>} />
+          <Route path="vendors" element={<div className="text-xl p-8">Manage Vendors (Coming Soon)</div>} />
+          <Route path="products" element={<div className="text-xl p-8">Manage Products (Coming Soon)</div>} />
         </Route>
       </Routes>
     </BrowserRouter>
