@@ -57,6 +57,9 @@ export const useCartStore = create((set, get) => ({
     }
   },
 
+  // Local only reset - no API call, used on logout
+  resetCart: () => set({ items: [] }),
+
   cartTotal: () => {
     const items = get().items;
     return items.reduce((total, item) => {

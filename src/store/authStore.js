@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import api from '../services/api.js';
+import { useCartStore } from './cartStore.js';
 
 export const useAuthStore = create(
   persist(
@@ -45,13 +46,14 @@ export const useAuthStore = create(
         } catch (error) {
           console.error("Logout error", error);
         } finally {
+          // Clear cart, user and token
+          useCartStore.getState().resetCart();
           set({ user: null, accessToken: null, isLoading: false });
         }
       },
 
       checkAuth: async () => {
         try {
-          // Just verifying token is valid
           const res = await api.get('/auth/me');
           set({ user: res.data.data.user });
         } catch (error) {
@@ -61,7 +63,7 @@ export const useAuthStore = create(
     }),
     {
       name: 'furnihub-auth',
-      partialize: (state) => ({ user: state.user, accessToken: state.accessToken }), // Persist user AND tokens
+      partialize: (state) => ({ user: state.user, accessToken: state.accessToken }),
     }
   )
 );

@@ -15,7 +15,7 @@ const fetchProducts = async ({ pageParam = 1 }) => {
 };
 
 const fetchVendors = async () => {
-  const res = await api.get('/vendors');
+  const res = await api.get('/vendor');
   return res.data.data.vendors;
 };
 

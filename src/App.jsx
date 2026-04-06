@@ -11,8 +11,12 @@ import Orders from './pages/customer/Orders.jsx'
 import Login from './pages/auth/Login.jsx'
 import Register from './pages/auth/Register.jsx'
 import VendorDashboard from './pages/vendor/VendorDashboard.jsx'
+import VendorProducts from './pages/vendor/VendorProducts.jsx'
+import VendorOrders from './pages/vendor/VendorOrders.jsx'
 import VendorProfile from './pages/vendor/VendorProfile.jsx'
 import VendorSettings from './pages/vendor/VendorSettings.jsx'
+import CreateProduct from './pages/vendor/CreateProduct.jsx'
+import EditProduct from './pages/vendor/EditProduct.jsx'
 import Profile from './pages/customer/Profile.jsx'
 import EditProfile from './pages/customer/EditProfile.jsx'
 import AdminDashboard from './pages/admin/AdminDashboard.jsx'
@@ -38,9 +42,9 @@ export default function App() {
 
   useEffect(() => {
     if (user) {
-        fetchCart();
-        fetchWishlist();
-        fetchFollowing();
+      fetchCart();
+      fetchWishlist();
+      fetchFollowing();
     }
   }, [user, fetchCart, fetchWishlist, fetchFollowing]);
 
@@ -66,16 +70,18 @@ export default function App() {
         <Route path="/" element={<MainLayout />}>
           <Route path="vendor" element={<DashboardLayout expectedRole="vendor" />}>
             <Route path="dashboard" element={<VendorDashboard />} />
-            <Route path="products" element={<div className="text-xl">Vendor Products (Implementation in progress)</div>} />
-            <Route path="orders" element={<div className="text-xl">Vendor Orders (Implementation in progress)</div>} />
+            <Route path="products" element={<VendorProducts />} />
+            <Route path="products/new" element={<CreateProduct />} />
+            <Route path="products/edit/:id" element={<EditProduct />} />
+            <Route path="orders" element={<VendorOrders />} />
             <Route path="settings" element={<VendorSettings />} />
           </Route>
           
           <Route path="admin" element={<DashboardLayout expectedRole="admin" />}>
             <Route path="dashboard" element={<AdminDashboard />} />
-            <Route path="users" element={<div className="text-xl">Manage Users (Implementation in progress)</div>} />
-            <Route path="vendors" element={<div className="text-xl">Manage Vendors (Implementation in progress)</div>} />
-            <Route path="products" element={<div className="text-xl">Manage Products (Implementation in progress)</div>} />
+            <Route path="users" element={<div className="text-xl p-8">Manage Users (Coming Soon)</div>} />
+            <Route path="vendors" element={<div className="text-xl p-8">Manage Vendors (Coming Soon)</div>} />
+            <Route path="products" element={<div className="text-xl p-8">Manage Products (Coming Soon)</div>} />
           </Route>
         </Route>
       </Routes>

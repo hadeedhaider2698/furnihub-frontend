@@ -6,6 +6,7 @@ import { ChevronLeft, Camera, Loader2, Save, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import api from '../../services/api.js';
 import { useAuthStore } from '../../store/authStore.js';
+import FileUpload from '../../components/ui/FileUpload.jsx';
 
 export default function EditProfile() {
   const { user, setUser } = useAuthStore();
@@ -68,34 +69,17 @@ export default function EditProfile() {
         animate={{ opacity: 1, y: 0 }}
         className="px-4 py-8"
       >
-        {/* Avatar section */}
-        <div className="flex flex-col items-center mb-8">
-          <div className="relative group">
-            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[var(--border)] bg-white">
-              <img 
-                src={formData.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${formData.name}`} 
-                alt="Avatar Preview" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <button className="absolute bottom-0 right-0 p-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors">
-              <Camera size={16} />
-            </button>
-          </div>
-          <button className="mt-4 text-blue-600 font-bold text-sm hover:underline">
-            Change profile photo
-          </button>
-          <div className="w-full mt-4">
-             <label className="block text-xs font-bold text-[var(--text-secondary)] uppercase tracking-widest pl-1 mb-1">Avatar URL (Optional)</label>
-             <input
-                type="text"
-                name="avatar"
-                value={formData.avatar}
-                onChange={handleChange}
-                placeholder="https://example.com/avatar.jpg"
-                className="w-full bg-[var(--surface)] text-[var(--primary)] text-sm rounded-xl py-3 px-4 border border-[var(--border)] focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-transparent transition-all"
-              />
-          </div>
+        <div className="flex flex-col items-center mb-10 px-6">
+          <FileUpload 
+            label="Profile Picture"
+            value={formData.avatar}
+            onChange={(url) => setFormData(prev => ({ ...prev, avatar: url }))}
+            folder="furnihub/avatars"
+            preview="round"
+          />
+          <p className="mt-2 text-[10px] text-[var(--text-secondary)] text-center max-w-[250px]">
+            Square images work best. Max 5MB.
+          </p>
         </div>
 
         {/* Form Fields */}

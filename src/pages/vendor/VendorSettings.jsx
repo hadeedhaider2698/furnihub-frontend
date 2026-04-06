@@ -2,30 +2,12 @@ import { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'react-hot-toast';
 import { 
-  Store, 
-  Image, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Globe, 
-  Instagram, 
-  Facebook,
-  Loader2,
-  Camera,
-  Save
+  Store, MapPin, Phone, Mail, Globe, Instagram, Facebook, Loader2, Save
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import api from '../../services/api.js';
 import { useAuthStore } from '../../store/authStore.js';
-
-const fetchOwnVendorProfile = async () => {
-  const res = await api.get('/vendor/dashboard/stats'); // We already have stats, but need the full profile
-  // Actually, we should probably have a get own profile endpoint. 
-  // Let's use the standard search by ID if we have it, or a dedicated /vendor/me
-  // For now, let's assume we can fetch it via stats or similar
-  const profileRes = await api.get('/vendor/dashboard/stats'); 
-  return profileRes.data.data.vendor; 
-};
+import FileUpload from '../../components/ui/FileUpload.jsx';
 
 export default function VendorSettings() {
   const { user } = useAuthStore();
@@ -37,29 +19,21 @@ export default function VendorSettings() {
     shopBanner: '',
     contactEmail: '',
     contactPhone: '',
-    address: {
-      street: '',
-      city: '',
-      state: '',
-      country: '',
-      zipCode: ''
-    },
-    socialLinks: {
-      website: '',
-      instagram: '',
-      facebook: ''
-    }
+    address: { street: '', city: '', state: '', country: '', zipCode: '' },
+    socialLinks: { website: '', instagram: '', facebook: '' }
   });
 
   const { data: profile, isLoading } = useQuery({
     queryKey: ['vendorProfile', user?.id],
     queryFn: async () => {
+      // Fetch vendor profile using the user's vendorId or by userId
+      if (user?.vendorId) {
+        const res = await api.get(`/vendor/${user.vendorId}`);
+        return res.data.data.vendor;
+      }
+      // Fallback: get own vendor profile
       const res = await api.get('/vendor/dashboard/stats');
-      // Wait, stats returns { stats: { ... } }
-      // I should check what vendor object it returns. 
-      // Actually, I'll use the ID from the user object if available.
-      const vendorRes = await api.get(`/vendor/${user.id}`); // ID is usually same or linked
-      return vendorRes.data.data.vendor;
+      return res.data.data.vendor;
     },
     enabled: !!user
   });
@@ -94,24 +68,33 @@ export default function VendorSettings() {
     const { name, value } = e.target;
     if (name.includes('.')) {
       const [parent, child] = name.split('.');
-      setFormData(prev => ({
-        ...prev,
-        [parent]: { ...prev[parent], [child]: value }
-      }));
+      setFormData(prev => ({ ...prev, [parent]: { ...prev[parent], [child]: value } }));
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }
   };
 
+  const handleLogoChange = (url) => setFormData(prev => ({ ...prev, shopLogo: url || '' }));
+  const handleBannerChange = (url) => setFormData(prev => ({ ...prev, shopBanner: url || '' }));
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    updateMutation.mutate(formData);
+    e?.preventDefault();
+    
+    // Clean data before sending
+    const { _id, userId, createdAt, updatedAt, __v, stripeAccountId, rating, totalReviews, totalSales, isApproved, ...cleanData } = formData;
+    
+    updateMutation.mutate(cleanData);
   };
 
-  if (isLoading) return <div className="flex justify-center p-20"><Loader2 className="animate-spin" /></div>;
+  if (isLoading) return (
+    <div className="flex justify-center p-20">
+      <Loader2 className="animate-spin text-[var(--primary)]" size={32} />
+    </div>
+  );
 
   return (
     <div className="max-w-4xl mx-auto p-4 lg:p-8 space-y-8 pb-32">
+      {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-[var(--primary)]">Shop Settings</h1>
@@ -130,51 +113,35 @@ export default function VendorSettings() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column: Visuals */}
         <div className="lg:col-span-1 space-y-6">
-          <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-sm">
-            <h3 className="text-sm font-bold text-[var(--primary)] mb-6 flex items-center">
-              <Image size={18} className="mr-2" /> Shop Visuals
+          <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-sm space-y-8">
+            <h3 className="text-sm font-bold text-[var(--primary)] flex items-center gap-2">
+              <Store size={16} /> Shop Visuals
             </h3>
-            
-            <div className="space-y-8">
-              {/* Logo */}
-              <div className="flex flex-col items-center">
-                <div className="relative group">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[var(--border)] bg-[var(--surface-2)]">
-                    <img src={formData.shopLogo || 'https://placehold.co/200'} alt="Logo" className="w-full h-full object-cover" />
-                  </div>
-                  <button className="absolute bottom-0 right-0 p-2 bg-[var(--primary)] text-white rounded-full shadow-lg">
-                    <Camera size={14} />
-                  </button>
-                </div>
-                <p className="text-[10px] font-bold text-[var(--text-secondary)] mt-3 uppercase tracking-widest">Shop Logo</p>
-                <input 
-                  type="text" 
-                  name="shopLogo" 
-                  value={formData.shopLogo} 
-                  onChange={handleChange} 
-                  placeholder="Logo URL"
-                  className="mt-2 w-full text-[10px] bg-[var(--surface-2)] p-2 rounded-lg border border-[var(--border)] outline-none"
-                />
-              </div>
 
-              {/* Banner */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-[21/9] rounded-xl overflow-hidden bg-[var(--surface-2)] border border-[var(--border)] relative group">
-                  <img src={formData.shopBanner || 'https://placehold.co/600x200'} alt="Banner" className="w-full h-full object-cover" />
-                  <button className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <Camera className="text-white" />
-                  </button>
-                </div>
-                <p className="text-[10px] font-bold text-[var(--text-secondary)] mt-3 uppercase tracking-widest">Shop Banner</p>
-                <input 
-                  type="text" 
-                  name="shopBanner" 
-                  value={formData.shopBanner} 
-                  onChange={handleChange} 
-                  placeholder="Banner URL"
-                  className="mt-2 w-full text-[10px] bg-[var(--surface-2)] p-2 rounded-lg border border-[var(--border)] outline-none"
-                />
-              </div>
+            {/* Logo upload */}
+            <div>
+              <FileUpload
+                value={formData.shopLogo}
+                onChange={handleLogoChange}
+                folder="furnihub/logos"
+                multiple={false}
+                accept="image/*"
+                label="Shop Logo"
+                preview="round"
+              />
+            </div>
+
+            {/* Banner upload */}
+            <div>
+              <FileUpload
+                value={formData.shopBanner}
+                onChange={handleBannerChange}
+                folder="furnihub/banners"
+                multiple={false}
+                accept="image/*"
+                label="Shop Banner"
+                preview="banner"
+              />
             </div>
           </div>
         </div>
@@ -183,61 +150,77 @@ export default function VendorSettings() {
         <div className="lg:col-span-2 space-y-6">
           {/* General Info */}
           <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-sm">
-            <h3 className="text-sm font-bold text-[var(--primary)] mb-6 flex items-center">
-              <Store size={18} className="mr-2" /> General Information
+            <h3 className="text-sm font-bold text-[var(--primary)] mb-6 flex items-center gap-2">
+              <Store size={16} /> General Information
             </h3>
-            
             <div className="space-y-4">
               <div>
                 <label className="block text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">Shop Name</label>
                 <input
-                  type="text"
-                  name="shopName"
-                  value={formData.shopName}
-                  onChange={handleChange}
+                  type="text" name="shopName" value={formData.shopName} onChange={handleChange}
                   className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-3 px-4 border border-[var(--border)] focus:ring-1 focus:ring-[var(--primary)] outline-none"
                 />
               </div>
               <div>
                 <label className="block text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">Description</label>
                 <textarea
-                  name="description"
-                  value={formData.description}
-                  onChange={handleChange}
-                  rows={4}
+                  name="description" value={formData.description} onChange={handleChange} rows={4}
                   className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-3 px-4 border border-[var(--border)] focus:ring-1 focus:ring-[var(--primary)] outline-none resize-none"
                 />
               </div>
             </div>
           </div>
 
-          {/* Contact Info */}
+          {/* Address */}
+          <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-sm">
+            <h3 className="text-sm font-bold text-[var(--primary)] mb-6 flex items-center gap-2">
+              <MapPin size={16} /> Address
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                { label: 'Street', name: 'address.street' },
+                { label: 'City', name: 'address.city' },
+                { label: 'State', name: 'address.state' },
+                { label: 'Country', name: 'address.country' },
+                { label: 'ZIP Code', name: 'address.zipCode' },
+              ].map(({ label, name }) => {
+                const [parent, child] = name.split('.');
+                return (
+                  <div key={name}>
+                    <label className="block text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">{label}</label>
+                    <input
+                      type="text" name={name} value={formData[parent][child]} onChange={handleChange}
+                      className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-2.5 px-4 border border-[var(--border)] outline-none"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Contact & Social */}
           <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-sm">
             <h3 className="text-sm font-bold text-[var(--primary)] mb-6">Contact & Social</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">
-                  <Mail size={12} className="mr-1" /> Contact Email
-                </label>
+                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1 gap-1"><Mail size={11} /> Contact Email</label>
                 <input type="email" name="contactEmail" value={formData.contactEmail} onChange={handleChange} className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-2.5 px-4 border border-[var(--border)]" />
               </div>
               <div>
-                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">
-                  <Phone size={12} className="mr-1" /> Contact Phone
-                </label>
+                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1 gap-1"><Phone size={11} /> Contact Phone</label>
                 <input type="tel" name="contactPhone" value={formData.contactPhone} onChange={handleChange} className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-2.5 px-4 border border-[var(--border)]" />
               </div>
               <div>
-                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">
-                  <Globe size={12} className="mr-1" /> Website
-                </label>
+                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1 gap-1"><Globe size={11} /> Website</label>
                 <input type="text" name="socialLinks.website" value={formData.socialLinks.website} onChange={handleChange} className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-2.5 px-4 border border-[var(--border)]" />
               </div>
               <div>
-                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1">
-                  <Instagram size={12} className="mr-1" /> Instagram
-                </label>
+                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1 gap-1"><Instagram size={11} /> Instagram</label>
                 <input type="text" name="socialLinks.instagram" value={formData.socialLinks.instagram} onChange={handleChange} className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-2.5 px-4 border border-[var(--border)]" />
+              </div>
+              <div>
+                <label className="flex items-center text-xs font-bold text-[var(--text-secondary)] uppercase pl-1 mb-1 gap-1"><Facebook size={11} /> Facebook</label>
+                <input type="text" name="socialLinks.facebook" value={formData.socialLinks.facebook} onChange={handleChange} className="w-full bg-[var(--surface-2)] text-sm rounded-xl py-2.5 px-4 border border-[var(--border)]" />
               </div>
             </div>
           </div>

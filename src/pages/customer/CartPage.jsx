@@ -72,7 +72,7 @@ export default function CartPage() {
                   <div className="flex flex-col flex-1 min-w-0">
                     <div className="flex justify-between items-start gap-4">
                       <div className="min-w-0">
-                        <Link to={`/products/${item.product.slug}`} className="text-xl lg:text-2xl font-serif font-bold text-[var(--primary)] hover:text-[var(--accent)] transition-colors line-clamp-1 block mb-1">
+                        <Link to={`/products/${item.product.slug || item.product._id}`} className="text-xl lg:text-2xl font-serif font-bold text-[var(--primary)] hover:text-[var(--accent)] transition-colors line-clamp-1 block mb-1">
                           {item.product.title}
                         </Link>
                         <p className="text-sm font-medium text-[var(--text-secondary)] mb-2 uppercase tracking-wider">{item.product.category || 'Luxury Collection'}</p>

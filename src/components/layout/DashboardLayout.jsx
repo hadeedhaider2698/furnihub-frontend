@@ -1,10 +1,9 @@
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, NavLink, Navigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore.js';
-import { LayoutDashboard, Users, Package, ShoppingCart, LogOut, Settings, Store } from 'lucide-react';
-import { Navigate } from 'react-router-dom';
+import { LayoutDashboard, Users, Package, ShoppingCart, Store, ChevronRight, Home } from 'lucide-react';
 
 export default function DashboardLayout({ expectedRole }) {
-  const { user, logout } = useAuthStore();
+  const { user } = useAuthStore();
   const location = useLocation();
 
   if (!user) return <Navigate to="/auth/login" replace />;
@@ -14,7 +13,7 @@ export default function DashboardLayout({ expectedRole }) {
     { label: 'Overview', path: '/vendor/dashboard', icon: LayoutDashboard },
     { label: 'Products', path: '/vendor/products', icon: Package },
     { label: 'Orders', path: '/vendor/orders', icon: ShoppingCart },
-    { label: 'Store Settings', path: '/vendor/settings', icon: Store },
+    { label: 'Settings', path: '/vendor/settings', icon: Store },
   ];
 
   const adminLinks = [
@@ -27,49 +26,58 @@ export default function DashboardLayout({ expectedRole }) {
   const links = user.role === 'admin' ? adminLinks : vendorLinks;
 
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-surface flex flex-col md:flex-row">
-      {/* Sidebar */}
-      <aside className="w-full md:w-64 bg-surface-2 border-r border-border p-6 flex flex-col h-auto md:h-[calc(100vh-80px)] sticky top-20">
-        <div className="mb-8">
-          <h2 className="text-xl font-serif font-bold text-primary capitalize">{user.role} Portal</h2>
-          <p className="text-sm text-text-secondary">Welcome back, {user?.name?.split(' ')[0] || user?.email || 'User'}</p>
-        </div>
-        
-        <nav className="flex-1 space-y-2">
+    <div className="min-h-screen bg-[var(--surface-2)] flex flex-col">
+      {/* Mobile Dashboard Sub-Nav */}
+      <div className="md:hidden sticky top-0 z-40 bg-[var(--surface)]/80 backdrop-blur-md border-b border-[var(--border)] overflow-x-auto no-scrollbar">
+        <div className="flex px-2">
           {links.map((link) => {
             const Icon = link.icon;
-            const isActive = location.pathname === link.path || location.pathname.startsWith(link.path + '/');
+            const isActive = location.pathname === link.path;
             return (
-              <Link
+              <NavLink
                 key={link.path}
                 to={link.path}
-                className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-colors ${
+                className={`flex items-center space-x-2 px-5 py-4 whitespace-nowrap border-b-2 transition-all ${
                   isActive 
-                    ? 'bg-primary text-white shadow-warm' 
-                    : 'text-text-secondary hover:bg-surface hover:text-primary'
+                    ? 'border-[var(--primary)] text-[var(--primary)] font-bold' 
+                    : 'border-transparent text-[var(--text-secondary)] font-medium'
                 }`}
               >
-                <Icon size={20} />
-                <span>{link.label}</span>
-              </Link>
+                <Icon size={18} />
+                <span className="text-xs">{link.label}</span>
+              </NavLink>
             );
           })}
-        </nav>
-        
-        <div className="mt-8 border-t border-border pt-4">
-          <button 
-            onClick={() => logout()}
-            className="flex items-center space-x-3 px-4 py-3 w-full rounded-lg font-medium text-error hover:bg-red-50 hover:text-red-700 transition-colors"
-          >
-            <LogOut size={20} />
-            <span>Sign Out</span>
-          </button>
         </div>
-      </aside>
+      </div>
 
-      {/* Main Content */}
-      <main className="flex-1 p-6 md:p-8 lg:p-12 overflow-y-auto">
-        <Outlet />
+      {/* Desktop Dashboard Header (Minimal breadcrumb) */}
+      <div className="hidden md:flex items-center justify-between px-8 py-6 bg-[var(--surface)] border-b border-[var(--border)]">
+        <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-[var(--text-secondary)]">
+          <NavLink to="/" className="hover:text-[var(--primary)] transition-colors">FurniHub</NavLink>
+          <ChevronRight size={12} />
+          <span className="text-[var(--primary)]">{user.role} Portal</span>
+          <ChevronRight size={12} />
+          <span className="text-[var(--accent)]">{links.find(l => location.pathname === l.path)?.label || 'Dashboard'}</span>
+        </div>
+        <div className="flex items-center space-x-4">
+             <div className="text-right">
+                <p className="text-sm font-bold text-[var(--primary)]">{user.name}</p>
+                <p className="text-[10px] text-[var(--text-secondary)] uppercase tracking-tighter">{user.role} Account</p>
+             </div>
+             <img 
+                src={user.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user.name}`} 
+                className="w-10 h-10 rounded-xl border border-[var(--border)]" 
+                alt="" 
+             />
+        </div>
+      </div>
+
+      {/* Content Container */}
+      <main className="flex-1 overflow-y-auto">
+        <div className="max-w-7xl mx-auto p-4 md:p-8 lg:p-10">
+            <Outlet />
+        </div>
       </main>
     </div>
   );

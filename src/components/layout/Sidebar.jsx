@@ -1,4 +1,4 @@
-import { Home, Search, PlusSquare, ShoppingBag, User, LogOut, Menu, Settings } from 'lucide-react';
+import { Home, Search, PlusSquare, ShoppingBag, User, LogOut, Menu, Settings, LayoutDashboard, Package, ShoppingCart, Store, Users, Heart } from 'lucide-react';
 import { NavLink, useLocation, Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore.js';
 import { useCartStore } from '../../store/cartStore.js';
@@ -15,13 +15,34 @@ export default function Sidebar() {
     navigate('/');
   };
 
-  const navItems = [
+  const isVendorRoute = location.pathname.startsWith('/vendor');
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
+  const customerLinks = [
     { icon: Home, path: '/', label: 'Home' },
     { icon: Search, path: '/explore', label: 'Explore' },
-    { icon: PlusSquare, path: user?.role === 'vendor' ? '/vendor/products/new' : '/auth/register', label: 'Create' },
     { icon: ShoppingBag, path: '/cart', label: 'Cart', badge: cartCount() > 0 ? cartCount() : null },
     { icon: User, path: user ? '/profile' : '/auth/login', label: 'Profile' },
   ];
+
+  const vendorLinks = [
+    { icon: LayoutDashboard, path: '/vendor/dashboard', label: 'Overview' },
+    { icon: Package, path: '/vendor/products', label: 'My Products' },
+    { icon: PlusSquare, path: '/vendor/products/new', label: 'Add Product' },
+    { icon: ShoppingCart, path: '/vendor/orders', label: 'Orders' },
+    { icon: Store, path: '/vendor/settings', label: 'Shop Settings' },
+  ];
+
+  const adminLinks = [
+    { icon: LayoutDashboard, path: '/admin/dashboard', label: 'Stats' },
+    { icon: Users, path: '/admin/users', label: 'Users' },
+    { icon: Store, path: '/admin/vendors', label: 'Vendors' },
+    { icon: Package, path: '/admin/products', label: 'All Products' },
+  ];
+
+  let navItems = customerLinks;
+  if (isVendorRoute && user?.role === 'vendor') navItems = vendorLinks;
+  if (isAdminRoute && user?.role === 'admin') navItems = adminLinks;
 
   return (
     <aside className="sticky top-0 h-screen hidden md:flex flex-col border-r border-[var(--border)] bg-[var(--surface)] transition-all duration-300 w-20 xl:w-64 px-3 py-8 z-50">
@@ -68,13 +89,23 @@ export default function Sidebar() {
 
       {/* Footer / More */}
       <div className="space-y-4 pt-10 border-t border-[var(--border)]/50">
-        {user?.role === 'vendor' && (
+        {user?.role === 'vendor' && !isVendorRoute && (
              <NavLink 
                 to="/vendor/dashboard"
+                className="flex items-center space-x-4 px-3 py-3 rounded-xl text-[var(--accent)] bg-[var(--accent)]/5 border border-[var(--accent)]/10 hover:bg-[var(--accent)]/10 transition-all"
+             >
+                <LayoutDashboard size={24} strokeWidth={1.5} />
+                <span className="hidden xl:block text-[15px] font-bold">Vendor Portal</span>
+             </NavLink>
+        )}
+
+        {(isVendorRoute || isAdminRoute) && (
+             <NavLink 
+                to="/"
                 className="flex items-center space-x-4 px-3 py-3 rounded-xl text-[var(--text-secondary)] hover:bg-[var(--surface-2)] hover:text-[var(--primary)] transition-all"
              >
-                <Settings size={24} strokeWidth={1.5} />
-                <span className="hidden xl:block text-[15px]">Dashboard</span>
+                <Home size={24} strokeWidth={1.5} />
+                <span className="hidden xl:block text-[15px]">Back to Shop</span>
              </NavLink>
         )}
         

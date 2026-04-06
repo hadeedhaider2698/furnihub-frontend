@@ -1,7 +1,7 @@
 import { formatDistanceToNow } from 'date-fns';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Link2, Share2, Flag, Copy } from 'lucide-react';
+import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Link2, Share2, Flag, Copy, X } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useCartStore } from '../../store/cartStore.js';
 import { useAuthStore } from '../../store/authStore.js';
@@ -147,17 +147,30 @@ export default function PostCard({ product }) {
         <button onClick={handleAddToCart} className="w-full bg-[var(--surface)] text-[var(--primary)] border border-[var(--border)] py-2 rounded-lg text-sm font-bold hovering hover:bg-[var(--primary)] hover:text-white transition-colors">Add to Bag</button>
       </div>
 
-      {/* Menu Overlay */}
+      {/* Menu Overlay — responsive: bottom sheet on mobile, centered modal on desktop */}
       <AnimatePresence>
         {showMenu && (
           <>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowMenu(false)} className="fixed inset-0 bg-black/40 z-[70]" />
-            <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} exit={{ y: '100%' }} className="fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl z-[80] p-6 pb-all md:max-w-[600px] md:mx-auto">
+            {/* Mobile */}
+            <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} exit={{ y: '100%' }} className="fixed bottom-0 left-0 right-0 bg-[var(--surface)] rounded-t-3xl z-[80] p-6 pb-10 lg:hidden">
               <div className="w-12 h-1.5 bg-gray-200 rounded-full mx-auto mb-6" />
               <div className="space-y-1">
-                <button onClick={handleShare} className="w-full flex items-center space-x-4 py-4 font-bold text-gray-800"><Link2 size={24} /><span>Copy Link</span></button>
-                <button onClick={handleShare} className="w-full flex items-center space-x-4 py-4 font-bold text-gray-800"><Share2 size={24} /><span>Share via...</span></button>
+                <button onClick={handleShare} className="w-full flex items-center space-x-4 py-4 font-bold text-[var(--primary)]"><Link2 size={24} /><span>Copy Link</span></button>
+                <button onClick={handleShare} className="w-full flex items-center space-x-4 py-4 font-bold text-[var(--primary)]"><Share2 size={24} /><span>Share via...</span></button>
                 <button onClick={() => { setShowMenu(false); toast.success('Reported'); }} className="w-full flex items-center space-x-4 py-4 font-bold text-red-500"><Flag size={24} /><span>Report Post</span></button>
+              </div>
+            </motion.div>
+            {/* Desktop */}
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} className="hidden lg:block fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--surface)] rounded-2xl z-[80] p-8 w-full max-w-sm shadow-2xl border border-[var(--border)]">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="font-bold text-[var(--primary)] text-lg">Share Post</h3>
+                <button onClick={() => setShowMenu(false)} className="p-1.5 hover:bg-[var(--surface-2)] rounded-full"><X size={20} /></button>
+              </div>
+              <div className="space-y-1">
+                <button onClick={handleShare} className="w-full flex items-center space-x-4 py-3 px-4 font-bold text-[var(--primary)] hover:bg-[var(--surface-2)] rounded-xl transition-colors"><Link2 size={22} /><span>Copy Link</span></button>
+                <button onClick={handleShare} className="w-full flex items-center space-x-4 py-3 px-4 font-bold text-[var(--primary)] hover:bg-[var(--surface-2)] rounded-xl transition-colors"><Share2 size={22} /><span>Share via...</span></button>
+                <button onClick={() => { setShowMenu(false); toast.success('Reported'); }} className="w-full flex items-center space-x-4 py-3 px-4 font-bold text-red-500 hover:bg-red-50 rounded-xl transition-colors"><Flag size={22} /><span>Report Post</span></button>
               </div>
             </motion.div>
           </>
@@ -166,3 +179,4 @@ export default function PostCard({ product }) {
     </motion.article>
   );
 }
+
